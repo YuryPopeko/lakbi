@@ -1,0 +1,423 @@
+@font-face {
+	font-family: FuturaNormal;
+	src: url(fonts/futura-normal.woff) format('woff');
+}
+
+@font-face {
+	font-family: HelveticaNeueRoman;
+	src: url(fonts/helveticaneue-cyr-roman.woff) format('woff');
+}
+
+@font-face {
+	font-family: HelveticaNeueLight;
+	src: url(fonts/helveticaneue-cyr-light.woff) format('woff');
+}
+
+@font-face {
+	font-family: ProximaNovaLight;
+	src: url(fonts/proxima-nova-light.woff) format('woff');
+}
+
+@font-face {
+	font-family: ProximaNovaSemibold;
+	src: url(fonts/proxima-nova-semibold.otf);
+}
+
+body { margin: 0;}
+
+.dark {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: 0;
+	transition: .4s;
+}
+
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {	text-decoration: none;}
+
+button {
+	padding: 0;
+	border: 0;
+	cursor: pointer;
+	outline: none;
+	background: 0;
+}
+
+input[type="submit"] { cursor: pointer;}
+
+header {
+	height: 85.65vh;
+	background: url(images/goa.jpg) no-repeat -100vw top / 100vw auto,
+				url(images/header.jpg) no-repeat 0vw top/ 100vw auto;
+	padding: 3.24vh 0 0 0;
+	transition: .4s;
+}
+
+nav > ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav > ul > li:nth-child(n+2):nth-child(-n+5) a,
+nav li span {
+	text-transform: uppercase;
+}
+
+nav a,
+nav li span {
+	font: 15px/26px FuturaNormal;
+	color: #fff;
+	cursor: pointer;
+}
+
+nav .logo {	top: -4px;}
+
+nav .logo a {
+	display: block;
+	width: 70px;
+	height: 20px;
+	background: url(images/logo.png) no-repeat center;
+}
+
+nav > ul > li {
+	display: inline-block;
+	position: relative;
+}
+
+.drop-menu {
+	left: -21px;
+	padding: 15px;
+}
+
+nav > ul > li:nth-child(4) { left: -70px;}
+nav > ul > li:nth-child(5) { left: -93px;}
+.drop-menu + li { left: -50px;}
+
+.drop-menu span::after {
+	content: "   ▼";
+	font-size: 7px;
+	position: relative;
+    top: -1px;
+    white-space: pre-wrap;
+}
+
+.drop-menu ul {
+	width: 233px;
+	padding: 15px;
+	background: #1e1e1e;
+	visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+    position: absolute;
+    left: 0px;
+}
+
+.drop-menu li {	padding: 5px 0;}
+
+.drop-menu a {
+	font: 12px/36px HelveticaNeueRoman;
+	color: #c8c8c8;
+}
+
+.drop-menu a:hover { color: #fff;}
+.drop-menu:hover { background: #1e1e1e;}
+
+.drop-menu:hover ul {
+	visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+nav .search form {
+	position: absolute;
+	left: 0px;
+	top: -7px;
+	opacity: 0;
+	z-index: -1;
+	transition: .4s;
+}
+
+nav input[type="search"] {
+	background: transparent;
+	width: 188px;
+	height: 25px;
+	border: 0;
+	border-bottom: 1px solid rgba(255, 255, 255, .5);
+	color: rgba(255, 255, 255, .5);
+	padding: 0 4px;
+	outline: none;
+	font: 14px/36px ProximaNovaLight;
+}
+
+nav ul button,
+nav .wish a,
+nav .cart a {
+	display: block;
+	width: 13px;
+	height: 13px;
+}
+
+nav .search button { background: url(images/search.svg) no-repeat center;}
+nav .account button { background: url(images/account.svg) no-repeat center;}
+nav .wish a { background: url(images/wish.svg) no-repeat center;}
+nav .cart a { background: url(images/cart.svg) no-repeat center;}
+
+nav .language {
+	text-decoration: underline;
+	font: 16px/26px HelveticaNeueRoman;
+}
+
+nav .cart {	left: 34px;}
+nav .wish {	left: 82px;}
+nav .account { left: 134px;}
+nav .search { left: 185px;}
+
+.sign {
+	width: 370px;
+	height: 425px;
+	background: #fff;
+	overflow: hidden;
+	position: absolute;
+	z-index: 1;
+	top: -70%;
+	left: 50%;
+	margin: -247.5px 0 0 -160px;
+	padding: 45px 0 25px 0;
+	transition: .4s;
+}
+
+.sign > div {
+	width: 370px;
+	position: absolute;
+	transition: .4s;
+}
+
+.sign .in {
+	left: 0px;
+}
+
+.close {
+	width: 26px;
+	height: 26px;
+	background: url(images/close.svg) no-repeat center;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.sign h3 {
+	text-align: center;
+	font: 24px/26px HelveticaNeueRoman;
+	margin: 0 0 35px 0;
+}
+
+.sign form {
+	padding: 0 30px;
+	position: relative;
+}
+
+.sign form input { outline: none;}
+
+.sign form button {
+	position: absolute;
+	top: 75px;
+    right: 50px;
+    color: #aeaeae;
+}
+
+.sign input:not([type="submit"]) {
+	width: 269px;
+	height: 46px;
+	border: 1px solid #d9d9d9;
+	padding: 0 20px;
+	font: 16px/26px HelveticaNeueRoman;
+	color: #393939;
+}
+
+.sign .in input[type="password"] {
+	margin: 10px 0 21px 0;
+}
+
+.sign input[type="submit"] {
+	width: 168px;
+	height: 54px;
+	display: block;
+	margin: 0 auto;
+	border: 1px solid #000;
+	background: #fff;
+	font: 14px/26px HelveticaNeueLight;
+}
+
+.sign .with {
+	display: block;
+	font: 14px/26px HelveticaNeueLight;
+	color: #adadad;
+}
+
+.sign .in .with { margin: 20px auto 25px auto;}
+
+.sign .with::before,
+.sign .with::after {
+	content: "";
+	display: inline-block;
+	height: 1px;
+	background: #e6e6e6;
+	position: relative;
+	top: -3px;
+}
+
+.sign .in .with::before,
+.sign .in .with::after { width: 128px;}
+
+.sign .with::before { margin: 0 23px 0 0;}
+.sign .with::after { margin: 0 0 0 23px;}
+
+.sign .social {
+	width: 252px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.sign .social button {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.sign .social button:hover { background-color: #b5b5b5;}
+
+.sign .social .in { background: #393939 url(images/in.svg) no-repeat center / 35% 35%;}
+.sign .social .fb { background: #393939 url(images/fb.svg) no-repeat center / 35% 35%;}
+.sign .social .vk { background: #393939 url(images/vk.svg) no-repeat center / 35% 35%;}
+.sign .social .lj { background: #393939 url(images/lj.svg) no-repeat center / 35% 35%;}
+.sign .social .pi { background: #393939 url(images/pi.svg) no-repeat center / 35% 35%;}
+
+.sign hr {
+	border: none;
+	background-color: #e6e6e6;
+	height: 1px;
+	margin: 33px 0 25px 0;
+}
+
+ .in > button {
+ 	text-decoration: underline;
+ 	font: 14px/14px HelveticaNeueLight;
+ 	display: block;
+ 	margin: 0 auto;
+ }
+
+ .sign .up {
+	position: absolute;
+    top: 45px;
+    left: 100%;
+ }
+
+ .sign .up input {
+	margin: 0 0 10px 0;
+}
+
+.sign .up input[type="submit"] {
+	margin: 5px auto;
+}
+
+.sign .up .with { margin: 15px 0 5px 0;}
+
+.sign .up .with::before,
+.sign .up .with::after { width: 121px;}
+
+h1,
+header > a {
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h1 { 
+	font: 3.125vw/3.65vw FuturaNormal;
+	margin: 33vh 0 0 0;
+}
+
+header > a {
+	display: block;
+	margin: 13vh auto 0 auto;
+	width: 11.875vw;
+	height: 2.5vw;
+	font: 12px/2.5vw HelveticaNeueRoman;
+	border: 1px solid #fff;
+}
+
+.indicators {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 36px;
+	margin: 8vh auto 0 auto;
+}
+
+.indicators button {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: rgba(255,255,255,.2);
+	cursor: pointer;
+	box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, .35);
+	transition: .4s;
+}
+
+.indicators .active {
+	width: 15px;
+	height: 15px;
+	background: #fff;
+}
+
+.novelties,
+.sale {
+	height: 88.89vh;
+	margin: 10px 0 0 0;
+}
+
+.novelties { background: url(images/novelties.jpg) no-repeat center / cover;}
+.sale { background: url(images/sale.jpg) no-repeat center / cover;}
+
+h2 {
+	font: 48px/36px ProximaNovaSemibold;
+	text-transform: uppercase;
+	letter-spacing: 14px;
+    display: inline-block;
+}
+
+.novelties h2 {	margin: 36.11vh 0 0 700px;}
+.sale h2 {	margin: 36.11vh 0 0 0;}
+
+.novelties a,
+.sale a {
+	font: 12px/48px HelveticaNeueRoman;
+	text-transform: uppercase;
+	color: #1e1e1e;
+	text-align: center;
+	display: block;
+	width: 228px;
+	height: 48px;
+	border: 1px solid #1e1e1e;
+}
+
+.novelties a { margin: 7.41vh 0 0 700px;}
+.sale a { margin: 7.41vh 0 0 0;}
