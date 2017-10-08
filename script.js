@@ -1,6 +1,7 @@
-function el(s) {
-	return document.querySelector(s);
-}
+function el(s) { return document.querySelector(s);}
+function els(s) { return document.querySelectorAll(s);}
+
+const screenWidth = window.innerWidth || document.documentElement.clientWidth;
 
 const dark = el('.dark');
 function darkside() {
@@ -18,9 +19,12 @@ function lightside() {
 try {
 	let search = el('.search form').style;
 	el('.search button').addEventListener('click', function() {
-		search.zIndex = '0';
-		search.opacity = '1';
-		search.left = '-213px';
+		search.display = 'inline-block';
+		setTimeout(function() {
+			search.zIndex = '0';
+			search.opacity = '1';
+			search.left = (screenWidth > 1200)? '-213px' : '-130px';
+		}, 0);
 	});
 } catch(e) {}
 
@@ -47,7 +51,7 @@ try {
 try {
 	let header = el('header').style;
 	el('.indicators .passive').addEventListener('click', function(e) {
-		header.background = 'url(images/goa.jpg) no-repeat 0vw top / 100vw auto, url(images/header.jpg) no-repeat 100vw top / 100vw auto';
+		header.background = 'url(images/goa.jpg) no-repeat top / cover';
 		el('.indicators .active').classList = 'passive';
 		e.target.className = 'active';
 		el('.indicators .passive').addEventListener('click', function(e) {
@@ -57,3 +61,56 @@ try {
 		});
 	});
 } catch(e) {}
+
+try {
+	let subscribe = el('.trend form'),
+		success = el('.subscribe-success').style;
+	subscribe.addEventListener('submit', function() {
+		success.display = 'block';
+		success.opacity = '1';
+		setTimeout(function() {
+			success.opacity = '';
+			success.display = '';
+		}, 1500);
+	});
+} catch(e) {}
+
+
+
+
+
+
+var range = document.querySelector('.instagram div'),
+    draggerWidth = 294,
+    down = false,
+    rangeWidth, rangeLeft;
+
+range.children[0].style.width = draggerWidth + 'px';
+
+range.addEventListener("mousedown", function(e) {
+  rangeWidth = range.offsetWidth;
+  rangeLeft = range.offsetLeft;
+  down = true;
+  return false;
+});
+
+range.addEventListener("drag", function(e) {
+  if (down && e.pageX >= rangeLeft && e.pageX <= (rangeLeft + rangeWidth)) {
+    for(var i=0; i<range.children.length;i++){
+      range.children[i].style.left = e.pageX - rangeLeft - draggerWidth + 'px';
+    }
+   }
+});
+
+range.addEventListener("mouseup", function() { down = false;});
+
+
+// els('.instagram a').forEach(function(item) {
+// 	item.addEventListener('drag', function(e) {
+// 		setTimeout(function() {
+// 			els('.instagram a').forEach(function(moveItem) {
+// 				moveItem.style.left = e.pageX + 'px';
+// 			});
+// 		}, 10);
+// 	});
+// });

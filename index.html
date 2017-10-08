@@ -13,7 +13,7 @@
 			<ul>
 				<li class="logo"><a href="index.html"></a></li>
 				<li class="drop-menu">
-					<span>Каталог</span>
+					<a href="">Каталог</a>
 					<ul>
 						<li><a href="">Christmas 2018</a></li>
 						<li><a href="">Осень-зима 2017/2018</a></li>
@@ -31,7 +31,8 @@
 				<li><a href="">Контакты</a></li>
 				<li class="search">
 					<form>
-						<input type="search" name="search" placeholder="Что ищем?">
+						<input type="search" name="search" placeholder="Что ищем?" autofocus>
+						<input type="submit" name="find">
 					</form>
 					<button></button>
 				</li>
@@ -45,10 +46,10 @@
 				<div class="in">
 					<h3>Вход</h3>
 					<form method="post">
-						<input type="email" name="email" placeholder="E-mail">
-						<input type="password" name="password" placeholder="Пароль">
+						<input type="email" name="email" placeholder="E-mail" required>
+						<input type="password" name="password" placeholder="Пароль" required>
 						<button>Забыли пароль?</button>
-						<input type="submit" name="sign-in" value="Войти">
+						<input type="submit" name="sign-in" value="Войти" class="black bttn">
 					</form>
 					<span class="with">или через:</span>
 					<div class="social">
@@ -64,11 +65,11 @@
 				<div class="up">
 					<h3>Регистрация</h3>
 					<form method="post">
-						<input type="text" name="name" placeholder="Ваше имя">
-						<input type="email" name="email" placeholder="E-mail">
-						<input type="password" name="password" placeholder="Придумайте пароль">
-						<input type="password" name="password-repeat" placeholder="Повторите пароль">
-						<input type="submit" name="sign-up" value="Регистрация">
+						<input type="text" name="name" placeholder="Ваше имя" required>
+						<input type="email" name="email" placeholder="E-mail" required>
+						<input type="password" name="password" placeholder="Придумайте пароль" required>
+						<input type="password" name="password-repeat" placeholder="Повторите пароль" required>
+						<input type="submit" name="sign-up" value="Регистрация" class="black bttn">
 					</form>
 					<span class="with">войти через:</span>
 					<div class="social">
@@ -82,7 +83,7 @@
 			</div>
 		</nav>
 		<h1>Коллекция Лето <br>2017</h1>
-		<a href="">Смотреть коллекцию</a>
+		<a href="" class="white bttn">Смотреть коллекцию</a>
 		<div class="indicators">
 			<button class="passive"></button>
 			<button class="active"></button>
@@ -92,16 +93,90 @@
 		<section class="novelties">
 			<div class="wrapper">
 				<h2>Новинки</h2>
-				<a href="">Смотреть</a>
+				<a href="" class="black bttn">Смотреть</a>
 			</div>
 		</section>
 		<section class="sale">
 			<div class="wrapper">
 				<h2>Распродажа</h2>
-				<a href="">Смотреть</a>
+				<a href="" class="black bttn">Смотреть</a>
+			</div>
+		</section>
+		<section class="instagram">
+			<h2>Instagram #LakbiFashion</h2>
+			<hr>
+			<div>
+				<a href="">
+					<img src="https://instagram.fhen1-1.fna.fbcdn.net/t51.2885-15/e35/22071484_501413620208909_2035849463632756736_n.jpg">
+					<span class="likes">297</span>
+					<span class="commentaries">8</span>
+				</a>
+				<a href="">
+					<img src="https://instagram.fhen1-1.fna.fbcdn.net/t51.2885-15/e35/22071327_284532655366870_126285967081340928_n.jpg">
+					<span class="likes">297</span>
+					<span class="commentaries">8</span>
+				</a>
+				<a href="">
+					<img src="https://instagram.fhen1-1.fna.fbcdn.net/t51.2885-15/e35/21373109_543667502653056_191711783721893888_n.jpg">
+					<span class="likes">297</span>
+					<span class="commentaries">8</span>
+				</a>
+				<a href="">
+					<img src="https://instagram.fhen1-1.fna.fbcdn.net/t51.2885-15/e35/21480142_1928713320701015_2177308575213289472_n.jpg">
+					<span class="likes">297</span>
+					<span class="commentaries">8</span>
+				</a>
+				<a href="">
+					<img src="https://instagram.fhen1-1.fna.fbcdn.net/t51.2885-15/e35/22071514_1964899707085753_4607056095221907456_n.jpg">
+					<span class="likes">297</span>
+					<span class="commentaries">8</span>
+				</a>
+				<a href="">
+					<img src="https://instagram.fhen1-1.fna.fbcdn.net/t51.2885-15/e35/21984642_1447023815380844_1575419632242655232_n.jpg">
+					<span class="likes">297</span>
+					<span class="commentaries">8</span>
+				</a>
+				<a href="">
+					<img src="https://instagram.fhen1-1.fna.fbcdn.net/t51.2885-15/e35/21985204_1910202579245788_3407095378644828160_n.jpg">
+					<span class="likes">297</span>
+					<span class="commentaries">8</span>
+				</a>
+			</div>
+		</section>
+		<section class="trend">
+			<h2>Будьте в тренде с Lakbi</h2>
+			<hr>
+			<p>Подпишитесь и получите подарок: скидочный купон 10 BYN на любую модель Lakbi.</p>
+			<form action="post" class="clearfix">
+				<div class="name">
+					<label for="subscribe-name">Имя</label>
+					<input type="name" name="subscribe-name" id="subscribe-name" required>
+				</div>
+				<div class="email">
+					<label for="subscribe-email">e-mail</label>
+					<input type="email" name="subscribe-email" id="subscribe-email" required>
+				</div>
+				<input type="submit" name="subscribe-submit" class="black bttn" value="Подписаться на рассылку">
+			</form>
+			<div class="subscribe-success">Вы подписаны на рассылку.</div>
+			<hr>
+			<p>Мы в социальных сетях:</p>
+			<div class="social">
+				<button class="in"></button>
+				<button class="fb"></button>
+				<button class="vk"></button>
+				<button class="lj"></button>
+				<button class="pi"></button>
 			</div>
 		</section>
 	</main>
+	<footer>
+		<div class="wrapper">
+			<p>ОДО «Лакби» <br>Беларусь, ул. Московская, д.202-6</p>
+			<p>УНП 00000000000</p>
+			<a href="mailto:lakbi@mail.ru">lakbi@mail.ru</a>
+		</div>
+	</footer>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
