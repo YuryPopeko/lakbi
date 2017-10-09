@@ -98,12 +98,24 @@ header {
 }
 
 nav > ul {
-	display: flex;
+	display: inline-flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-nav > ul > li:nth-child(n+2):nth-child(-n+5) a {
+nav .menu {
+	width: 589px;
+	margin: 0 0 0 48px;
+}
+
+nav .icons {
+	width: 156px;
+    float: right;
+    position: relative;
+    top: 11px;
+}
+
+nav > ul > li:nth-child(n+1):nth-child(-n+4) a {
 	text-transform: uppercase;
 }
 
@@ -113,10 +125,8 @@ nav a {
 	cursor: pointer;
 }
 
-nav .logo {	top: -4px;}
-
-nav .logo a {
-	display: block;
+nav .logo {
+	display: inline-block;
 	width: 70px;
 	height: 20px;
 	background: url(images/logo.png) no-repeat center;
@@ -128,13 +138,8 @@ nav > ul > li {
 }
 
 .drop-menu {
-	left: -21px;
 	padding: 15px;
 }
-
-nav > ul > li:nth-child(4) { left: -70px;}
-nav > ul > li:nth-child(5) { left: -93px;}
-.drop-menu + li { left: -50px;}
 
 .drop-menu > a::after {
 	content: "   ▼";
@@ -209,11 +214,6 @@ nav .language {
 	text-decoration: underline;
 	font: 16px/26px HelveticaNeueRoman;
 }
-
-nav .cart {	left: 34px;}
-nav .wish {	left: 82px;}
-nav .account { left: 134px;}
-nav .search { left: 185px;}
 
 nav .search input[type="submit"] { display: none;}
 
@@ -616,14 +616,10 @@ footer p:nth-of-type(2) {
 		width: 940px;
 	}
 
-	.drop-menu { left: 33px;}
-	.drop-menu + li { left: 11px;}
-	nav > ul > li:nth-child(4) { left: -2px;}
-	nav > ul > li:nth-child(5) { left: -16px;}
-	nav .cart { left: 11px;}
-	nav .wish { left: 37px;}
-	nav .account { left: 63px;}
-	nav .search { left: 87px;}
+	nav .menu {
+		width: 534px;
+	    margin: 0 0 0 79px;
+	}
 
 	h1 { margin: 22vh 0 0 0;}
 
@@ -637,4 +633,31 @@ footer p:nth-of-type(2) {
 		float: left;
 		margin: 0 160px 0 0;
 	}
+}
+
+@media (max-width: 970px) {
+	.wrapper { width: 87.5vw;}
+
+	header {
+	    height: 150vw;
+	    background: url(images/header.jpg) no-repeat 50% 50px / cover;
+	    padding: 0;
+	}
+
+	nav { height: 50px;}
+
+	nav .logo {
+	    background: url(images/logo-black.png) no-repeat center;
+	}
+
+	nav .menu {
+		position: absolute;
+		margin: 0;
+		display: none;
+	}
+
+	nav .search button { background: url(images/search-black.svg) no-repeat center;}
+	nav .account button { display: none;}
+	nav .wish a { display: none;}
+	nav .cart a { background: url(images/cart-black.svg) no-repeat center;}
 }
