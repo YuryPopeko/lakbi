@@ -197,7 +197,7 @@ nav input[type="search"] {
 	font: 14px/36px ProximaNovaLight;
 }
 
-nav ul button,
+nav .icons button,
 nav .wish a,
 nav .cart a {
 	display: block;
@@ -213,6 +213,7 @@ nav .cart a { background: url(images/cart.svg) no-repeat center;}
 nav .language {
 	text-decoration: underline;
 	font: 16px/26px HelveticaNeueRoman;
+	text-align: center;
 }
 
 nav .search input[type="submit"] { display: none;}
@@ -232,7 +233,7 @@ nav .search input[type="submit"] { display: none;}
 }
 
 .sign > div {
-	width: 370px;
+	width: 100%;
 	position: absolute;
 	transition: .4s;
 }
@@ -269,12 +270,13 @@ nav .search input[type="submit"] { display: none;}
 }
 
 .sign input:not([type="submit"]) {
-	width: 269px;
+	width: 100%;
 	height: 46px;
 	border: 1px solid #d9d9d9;
 	padding: 0 20px;
 	font: 16px/26px HelveticaNeueRoman;
 	color: #393939;
+	box-sizing: border-box;
 }
 
 .sign .in input[type="password"] {
@@ -635,29 +637,245 @@ footer p:nth-of-type(2) {
 	}
 }
 
+@media (min-width: 971px) {
+	.only-mobile { display: none;}
+}
+
 @media (max-width: 970px) {
+	.only-desktop-tablet { display: none;}
 	.wrapper { width: 87.5vw;}
+
+	.bttn {
+	    width: 71.25vw;
+	    height: 15vw;
+	    font: 3.75vw/15vw HelveticaNeueRoman;
+	}
 
 	header {
 	    height: 150vw;
-	    background: url(images/header.jpg) no-repeat 50% 50px / cover;
+	    background: url(images/header.jpg) no-repeat 50% 15.625vw / cover;
 	    padding: 0;
 	}
 
-	nav { height: 50px;}
+	nav { height: 15.625vw;}
+
+	nav a { font: 4.69vw/8.125vw FuturaNormal;}
 
 	nav .logo {
-	    background: url(images/logo-black.png) no-repeat center;
+		width: 21.875vw;
+    	height: 6.25vw;
+		background: url(images/logo-black.png) no-repeat center / cover;
+		margin: 4.6vw 0 0 0;
+	}
+
+	.drop-menu > a::after {
+	    font-size: 2.19vw;
+	    top: -0.331vw;
+	}
+
+	.drop-menu:hover { background: 0;}
+	.drop-menu ul {
+		width: 93%;
+		background: #fff;
+	}
+
+	.drop-menu li a {
+		font: 3vw/10vw HelveticaNeueRoman;
+		color: #000;
 	}
 
 	nav .menu {
+		display: block;
 		position: absolute;
 		margin: 0;
-		display: none;
+		padding: 0 6.25vw;
+		left: 0;
+		top: -137.5vw;
+		background: #fff;
+		width: 100vw;
+		z-index: 1;
+		transition: .4s;
+		box-sizing: border-box;
+	}
+
+	nav .menu > li {
+		display: block;
+		border-bottom: 1px solid #f0f0f0;
+		padding: 5vw 3.125vw;
+	}
+
+	nav .menu > li > a { color: #000;}
+
+	nav > ul > li:nth-child(n+1):nth-child(-n+7) a { text-transform: uppercase;}
+
+	nav .icons button, nav .cart a {
+	    width: 4.06vw;
+		height: 4.06vw;
 	}
 
 	nav .search button { background: url(images/search-black.svg) no-repeat center;}
-	nav .account button { display: none;}
-	nav .wish a { display: none;}
 	nav .cart a { background: url(images/cart-black.svg) no-repeat center;}
+	
+	nav .icons {
+		width: 29.69vw;
+		top: 5vw;
+	}
+
+	nav .account button {
+		font: 3.75vw/7.5vw HelveticaNeueRoman;
+		text-transform: uppercase;
+		border: 1px solid #000;
+		width: 100%;
+		height: 15vw;
+	}
+
+	.language a {
+		display: inline-block;
+		width: 20.62vw;
+		height: 8.44;
+		text-align: center;
+		font: 3.75vw/8.44vw HelveticaNeueRoman;
+	}
+
+	.language .active {
+		border: 1px solid #000;
+	}
+
+	nav input[type="search"] {
+		width: 31.25vw;
+	    border-bottom: 1px solid #aeaeae;
+	    color: #000;
+	}
+
+	nav .hamburger {
+		width: 25px;
+		height: 17px;
+		background: url(images/hamburger.svg) no-repeat center;
+	}
+
+	.sign { width: 100%;}
+	.sign .in .with::before, .sign .in .with::after { width: 103px;}
+	.sign .up .with::before, .sign .up .with::after { width: 96px;}
+
+	h1 {
+	    font: 7.5vw/11.25vw FuturaNormal;
+	    margin: 33.5vh 0 0 0;
+	}
+
+	.indicators { margin: 6vh auto 0 auto;}
+
+	.novelties, .sale { height: 84.51vh;}
+
+	.novelties {
+		background: url(images/novelties-mobile.jpg) no-repeat center / cover;
+		position: relative;
+	}
+
+	h2 {
+	    font: 9.37vw/11.25vw ProximaNovaSemibold;
+	    letter-spacing: 7px;
+	    width: 100%;
+	    text-align: center;
+	    position: relative;
+	}
+
+	.novelties h2,
+	.sale h2 {
+		margin: 60vh 0 0 0;
+	}
+
+	.novelties a,
+	.sale a {
+		margin: 5vh auto 0 auto;
+		position: relative;
+	}
+
+	section.novelties::before,
+	section.sale::before {
+	    content: "";
+	    display: block;
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    width: 100%;
+	    height: 30vh;
+	    background: rgba(249,250,252,.9);
+	}
+
+	.sale {
+		background: url(images/sale-mobile.jpg) no-repeat center / cover;
+		position: relative;
+	}
+
+	.instagram h2, .trend h2 {
+	    font: 5vw/11.25vw ProximaNovaSemibold;
+	    margin: 9.37vw 0 3.125vw 0;
+	    letter-spacing: 2px;
+	}
+
+	.instagram div {
+	    margin: 17px 0 0 0;
+	}
+
+	.instagram a {
+	    width: 200px;
+	    height: 200px;
+	}
+
+	.trend p { font: 4.37vw/7.5vw HelveticaNeueLight !important;}
+	.trend p:nth-of-type(1) { margin: 4.69vw 0 6.25vw 0;}
+
+	.trend form {
+	    width: 87.5vw;
+	    height: auto;
+	    margin: 0 auto 9.37vw auto;
+	}
+
+	.trend .name,
+	.trend .email {
+	    width: 100%;
+	    float: none;
+	}
+
+	.trend input:not([type="submit"]) {
+		width: 100%;
+	}
+
+	.trend input[type="submit"],
+	.trend .email {
+	    margin: 9.37vw auto 0 auto;
+	    position: static;
+	}
+
+	.trend p:nth-of-type(2) { margin: 11vw 0 9.37vw 0;}
+
+	.trend .social {
+	    width: 78.75vw;
+	    margin-bottom: 14.375vw;
+	}
+
+	.trend .social button {
+	    width: 12.5vw;
+	    height: 12.5vw;
+	}
+
+	footer {
+	    height: 48.44vw;
+	    padding: 10.94vw 0 0 0;
+	}
+
+	footer .wrapper * {
+	    font: 4.375vw/7.5vw HelveticaNeueRoman;
+	}
+
+	footer p:first-of-type {
+	    float: none;
+	    margin: 9.375vw 0;
+	}
+
+	footer p:nth-of-type(2) {
+	    position: relative;
+	    top: -1.56vw;
+	    margin: 0;
+	}
 }

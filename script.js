@@ -23,16 +23,41 @@ try {
 		setTimeout(function() {
 			search.zIndex = '0';
 			search.opacity = '1';
-			search.left = (screenWidth > 1200)? '-213px' : '-130px';
+			search.left = (screenWidth > 1200) ? '-213px' : (screenWidth < 970)? '-32.81vw' : '-130px';
 		}, 0);
 	});
 } catch(e) {}
 
 try {
-	let sign = el('.sign').style;
-	el('.account button').addEventListener('click', function() {
-		sign.top = '50%';
+	let menu = el('ul.menu').style,
+		hamburger = el('.hamburger'),
+		menuVisible = false;
+	hamburger.addEventListener('click', function() {
+		if (menuVisible) {
+			menuClose();
+			menuVisible = false;
+			return;
+		}
 		darkside();
+		dark.style.top = '15.625vw';
+		menu.top = '15.625vw';
+		menuVisible = true;
+	});
+	function menuClose() {
+		lightside();
+		menu.top = '';
+	}
+	dark.addEventListener('click', menuClose);
+} catch(e) {}
+
+try {
+	let sign = el('.sign').style;
+	els('.account button').forEach(function(item) {
+		item.addEventListener('click', function() {
+			el('ul.menu').style.top = '';
+			sign.top = '50%';
+			darkside();
+		});
 	});
 	let close = function() {
 		lightside();
@@ -51,7 +76,7 @@ try {
 try {
 	let header = el('header').style;
 	el('.indicators .passive').addEventListener('click', function(e) {
-		header.background = 'url(images/goa.jpg) no-repeat top / cover';
+		header.backgroundImage = 'url(images/goa.jpg)';
 		el('.indicators .active').classList = 'passive';
 		e.target.className = 'active';
 		el('.indicators .passive').addEventListener('click', function(e) {
@@ -81,7 +106,7 @@ try {
 
 
 var range = document.querySelector('.instagram div'),
-    draggerWidth = 294,
+    draggerWidth = (screenWidth > 970) ? 294 : 200,
     down = false,
     rangeWidth, rangeLeft;
 
