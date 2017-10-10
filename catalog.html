@@ -2,18 +2,18 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Главная | Lakbi</title>
+	<title>Каталог | Lakbi</title>
 	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width,user-scalable=no">
 </head>
 <body>
-	<header class="main">
+	<header class="black">
 		<div class="dark"></div>
 		<nav class="wrapper">
 		<a href="index.html" class="logo"></a>
 			<ul class="menu">
 				<li class="drop-menu">
-					<a href="catalog.html">Каталог</a>
+					<a href="">Каталог</a>
 					<ul>
 						<li><a href="">Christmas 2018</a></li>
 						<li><a href="">Осень-зима 2017/2018</a></li>
@@ -26,7 +26,7 @@
 						<li><a href="">Спорт и отдых</a></li>
 					</ul>
 				</li>
-				<li><a href="">Распродажа</a></li>
+				<li><a href="" class="red">Распродажа</a></li>
 				<li><a href="">Доставка и оплата</a></li>
 				<li><a href="">Контакты</a></li>
 				<li class="only-mobile"><a href="">Список желаний</a></li>
@@ -91,25 +91,48 @@
 				</div>
 			</div>
 		</nav>
-		<h1>Коллекция Лето <br>2017</h1>
-		<a href="" class="white bttn">Смотреть коллекцию</a>
-		<div class="indicators">
-			<button class="passive"></button>
-			<button class="active"></button>
-		</div>
 	</header>
 	<main>
-		<section class="novelties">
-			<div class="wrapper">
-				<h2>Новинки</h2>
-				<a href="" class="black bttn">Смотреть</a>
-			</div>
+		<section class="breadcrumbs">
+		<div class="wrapper">
+			<a href="index.html">Главная</a> / Каталог
+		</div>
 		</section>
-		<section class="sale">
-			<div class="wrapper">
-				<h2>Распродажа</h2>
-				<a href="" class="black bttn">Смотреть</a>
-			</div>
+		<section class="catalog wrapper">
+			<aside class="filter">
+			    <div class="accordion">
+		            <input id="collection" type="checkbox" class="collection" name="filter">
+		            <label for="collection">Коллекция</label>
+		            <section>
+		                <ul>
+							<li><button>Christmas 2018</button></li>
+							<li><button>Осень-зима 2017/2018</button></li>
+							<li><button>Лето 2017</button></li>
+							<li><button>Весна 2017</button></li>
+							<li><button>Christmas 2017</a></li>
+							<li><button>Осень-зима 2016/2017. Часть 1</button></li>
+							<li><button>Осень-зима 2016/2017. Часть 2</button></li>
+							<li><button>Осень-зима 2016/2017. Часть 3</button></li>
+							<li><button>Спорт и отдых</button></li>
+						</ul>
+		            </section>
+	            </div>
+	            <div class="accordion">
+					<input id="category" type="checkbox" class="category" name="filter">
+					<label for="category">Категория</label>
+					<section>
+					    
+					</section>
+	            </div>
+	            <div class="accordion">
+					<input id="size" type="checkbox" class="size" name="filter">
+					<label for="size">Размер</label>
+					<section>
+					    
+					</section>
+	            </div>
+			</aside>
+			<h1>Каталог</h1>
 		</section>
 		<section class="instagram">
 			<h2>Instagram #LakbiFashion</h2>
