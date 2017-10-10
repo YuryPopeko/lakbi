@@ -39,13 +39,20 @@ try {
 			return;
 		}
 		darkside();
-		dark.style.top = '15.625vw';
+		if (screenWidth <= 970) {
+			el('nav .logo').style.zIndex = '1';
+			el('nav .icons').style.zIndex  = '1';
+		}
 		menu.top = '15.625vw';
 		menuVisible = true;
 	});
 	function menuClose() {
 		lightside();
 		menu.top = '';
+		if (screenWidth <= 970) {
+			el('nav .logo').style.zIndex = '';
+			el('nav .icons').style.zIndex  = '';
+		}
 	}
 	dark.addEventListener('click', menuClose);
 } catch(e) {}
