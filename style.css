@@ -389,7 +389,7 @@ nav .search input[type="submit"] { display: none;}
 	height: 40px;
 }
 
-.social button:hover { background-color: #b5b5b5;}
+.social button:hover { background-color: #dcdcdc;}
 
 .social .in { background: #393939 url(images/in.svg) no-repeat center / 35% 35%;}
 .social .fb { background: #393939 url(images/fb.svg) no-repeat center / 35% 35%;}

@@ -28,6 +28,7 @@ try {
 	});
 } catch(e) {}
 
+
 try {
 	let menu = el('ul.menu').style,
 		hamburger = el('.hamburger'),
@@ -57,6 +58,7 @@ try {
 	dark.addEventListener('click', menuClose);
 } catch(e) {}
 
+
 try {
 	let sign = el('.sign').style;
 	els('.account button').forEach(function(item) {
@@ -80,6 +82,7 @@ try {
 	});
 } catch(e) {}
 
+
 try {
 	let header = el('header').style;
 	el('.indicators .passive').addEventListener('click', function(e) {
@@ -94,6 +97,7 @@ try {
 	});
 } catch(e) {}
 
+
 try {
 	let subscribe = el('.trend form'),
 		success = el('.subscribe-success').style;
@@ -107,6 +111,7 @@ try {
 	});
 } catch(e) {}
 
+
 try {
 	els('.choosed button').forEach(function(item) {
 		item.addEventListener('click', function(e) {
@@ -117,41 +122,14 @@ try {
 } catch(e) {}
 
 
-
-
-
-
-// var range = document.querySelector('.instagram div'),
-//     draggerWidth = (screenWidth > 970) ? 294 : 200,
-//     down = false,
-//     rangeWidth, rangeLeft;
-
-// range.children[0].style.width = draggerWidth + 'px';
-
-// range.addEventListener("mousedown", function(e) {
-//   rangeWidth = range.offsetWidth;
-//   rangeLeft = range.offsetLeft;
-//   down = true;
-//   return false;
-// });
-
-// range.addEventListener("drag", function(e) {
-//   if (down && e.pageX >= rangeLeft && e.pageX <= (rangeLeft + rangeWidth)) {
-//     for(var i=0; i<range.children.length;i++){
-//       range.children[i].style.left = e.pageX - rangeLeft - draggerWidth + 'px';
-//     }
-//    }
-// });
-
-// range.addEventListener("mouseup", function() { down = false;});
-
-
-els('.instagram a').forEach(function(item) {
-	item.addEventListener('drag', function(e) {
-		setTimeout(function() {
-			els('.instagram a').forEach(function(moveItem) {
-				moveItem.style.left = e.pageX + 'px';
-			});
-		}, 10);
+try {
+	els('.instagram a').forEach(function(item) {
+		item.addEventListener('drag', function(e) {
+			setTimeout(function() {
+				els('.instagram a').forEach(function(moveItem) {
+					moveItem.style.left = e.pageX + 'px';
+				});
+			}, 10);
+		});
 	});
-});
+} catch(e) {}
