@@ -7,10 +7,12 @@ const dark = el('.dark');
 function darkside() {
     dark.style.display = 'block';
     document.body.style.overflow = 'hidden';
-    setTimeout(function() { dark.style.opacity = '0.5';}, 1);
+    document.body.style.filter = 'grayscale(1)';
+    setTimeout(function() { dark.style.opacity = '.4';}, 1);
 }
 function lightside() {
     dark.style.opacity = '';
+    document.body.style.filter = '';
     document.body.style.overflow = '';
     setTimeout(function() { dark.style.display = '';}, 400);
 }
@@ -71,14 +73,14 @@ try {
 	let close = function() {
 		lightside();
 		sign.top = '';
-		el('.sign .in').style.left = '0%';
+		el('.sign .in').style.left = '0';
 		el('.sign .up').style.left = '';
 	}
 	el('.sign .close').addEventListener('click', close);
 	dark.addEventListener('click', close);
 	el('.in > button').addEventListener('click', function() {
 		el('.sign .in').style.left = '-100%';
-		el('.sign .up').style.left = '0%';
+		el('.sign .up').style.left = '0';
 	});
 } catch(e) {}
 

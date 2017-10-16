@@ -33,7 +33,10 @@
 	src: url(fonts/proxima-nova-semibold.otf);
 }
 
-body { margin: 0;}
+body {
+	margin: 0;
+	transition: .4s;
+}
 
 .dark {
 	display: none;
@@ -128,8 +131,6 @@ header.main {
 
 .black nav a { color: #000;}
 .black .logo { background-image: url(images/logo-black.png);}
-
-.red { color: #cd4f4f !important;}
 
 nav > ul {
 	display: inline-flex;
