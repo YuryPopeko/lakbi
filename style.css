@@ -124,7 +124,7 @@ header { transition: .4s;}
 header .menu { height: 67px;}
 
 header.main {
-	height: 85.65vh;
+	height: 100vh;
 	background: url(images/header.jpg) no-repeat top / cover;
 	padding: 3.24vh 0 0 0;
 }
@@ -139,15 +139,15 @@ nav > ul {
 }
 
 nav .menu {
-	width: 589px;
-	margin: 0 0 0 48px;
+	width: 520px;
+	margin: 0 0 0 77px;
 }
 
 nav .icons {
 	width: 156px;
     float: right;
     position: relative;
-    top: 11px;
+    top: 18px;
 }
 
 .black .icons { top: 15px;}
@@ -465,7 +465,7 @@ header > a {
 	justify-content: space-between;
 	align-items: center;
 	width: 36px;
-	margin: 13vh auto 0 auto;
+	margin: 20vh auto 0 auto;
 }
 
 .indicators button {
