@@ -25,7 +25,7 @@ try {
 		setTimeout(function() {
 			search.zIndex = '0';
 			search.opacity = '1';
-			search.left = (screenWidth > 1200) ? '-213px' : (screenWidth < 970)? '-32.81vw' : '-130px';
+			search.left = (screenWidth > 1200) ? '-200px' : (screenWidth < 970)? '-32.81vw' : '-130px';
 		}, 0);
 	});
 } catch(e) {}
@@ -120,6 +120,21 @@ try {
 			e.target.parentElement.style.opacity = '0';
 			setTimeout(function() {e.target.parentElement.style.display = 'none';}, 400);
 		});
+	});
+} catch(e) {}
+
+try {
+	let filterOpened = false;
+	el('label[for="filter"]').addEventListener('click', function() {
+		if (!filterOpened) {
+			setTimeout(function() {
+				el('aside.filter').style.height = 'auto';
+			}, 400);
+			filterOpened = true;
+		} else {
+			el('aside.filter').style.height = '';
+			filterOpened = false;
+		}
 	});
 } catch(e) {}
 

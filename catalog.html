@@ -30,7 +30,7 @@
 				<li><a href="">Доставка и оплата</a></li>
 				<li><a href="">Контакты</a></li>
 				<li class="only-mobile"><a href="">Список желаний</a></li>
-				<li class="account only-mobile"><button>Войти / Зарегистрироваться</button></li>
+				<li class="account only-mobile"><button class="black bttn">Войти / Зарегистрироваться</button></li>
 				<li class="language only-mobile">
 					<a href="" class="active">Ru</a>
 					<a href="">En</a>
@@ -99,46 +99,51 @@
 		</div>
 		</section>
 		<section class="catalog clearfix wrapper">
-			<aside class="filter">
-			    <div class="accordion">
-		            <input id="collection" type="checkbox" class="collection" name="filter">
-		            <label for="collection">Коллекция</label>
-		            <div>
-		                <ul>
-							<li><button>Christmas 2018</button></li>
-							<li><button>Осень-зима 2017/2018</button></li>
-							<li><button>Лето 2017</button></li>
-							<li><button>Весна 2017</button></li>
-							<li><button>Christmas 2017</a></li>
-							<li><button>Осень-зима 2016/2017. Часть 1</button></li>
-							<li><button>Осень-зима 2016/2017. Часть 2</button></li>
-							<li><button>Осень-зима 2016/2017. Часть 3</button></li>
-							<li><button>Спорт и отдых</button></li>
-						</ul>
-		            </div>
-	            </div>
-	            <div class="accordion">
-					<input id="category" type="checkbox" class="category" name="filter">
-					<label for="category">Категория</label>
-					<div></div>
-	            </div>
-	            <div class="accordion">
-					<input id="size" type="checkbox" class="size" name="filter">
-					<label for="size">Размер</label>
-					<div></div>
-	            </div>
-	            <div>
-	            	<input type="checkbox" id="novelties" name="novelties">
-	            	<label for="novelties">Новинки</label>
-	            </div>
-	            <div>
-	            	<input type="checkbox" id="sale" name="sale">
-	            	<label for="sale">Распродажа</label>
-	            </div>
-			</aside>
 			<div class="head">
 				<h1>Каталог</h1>
-				<span class="found">Найдено: 287 товаров</span>
+				<span class="found only-desktop-tablet">Найдено: 287 товаров</span>
+			</div>
+			<div class="accordion">
+				<input id="filter" type="checkbox">
+				<label for="filter" class="black bttn only-mobile"></label>
+				<aside class="filter">
+				    <div class="accordion">
+			            <input id="collection" type="checkbox" class="collection" name="filter">
+			            <label for="collection">Коллекция</label>
+			            <div>
+			                <ul>
+								<li><button>Christmas 2018</button></li>
+								<li><button>Осень-зима 2017/2018</button></li>
+								<li><button>Лето 2017</button></li>
+								<li><button>Весна 2017</button></li>
+								<li><button>Christmas 2017</a></li>
+								<li><button>Осень-зима 2016/2017. Часть 1</button></li>
+								<li><button>Осень-зима 2016/2017. Часть 2</button></li>
+								<li><button>Осень-зима 2016/2017. Часть 3</button></li>
+								<li><button>Спорт и отдых</button></li>
+							</ul>
+			            </div>
+		            </div>
+		            <div class="accordion">
+						<input id="category" type="checkbox" class="category" name="filter">
+						<label for="category">Категория</label>
+						<div></div>
+		            </div>
+		            <div class="accordion">
+						<input id="size" type="checkbox" class="size" name="filter">
+						<label for="size">Размер</label>
+						<div></div>
+		            </div>
+		            <div>
+		            	<input type="checkbox" id="novelties" name="novelties">
+		            	<label for="novelties">Новинки</label>
+		            </div>
+		            <div>
+		            	<input type="checkbox" id="sale" name="sale">
+		            	<label for="sale">Распродажа</label>
+		            </div>
+		            <button class="black bttn only-mobile">Применить</button>
+				</aside>
 			</div>
 			<div class="choosed">
 				<div class="item">
@@ -219,7 +224,7 @@
 					<p class="price">129 р. 00 к.</p>
 					<p class="old-price">129 р. 00 к.</p>
 				</div>
-				<div class="product with-sale">
+				<div class="product with-sale only-desktop">
 					<a href="" class="img">
 						<img src="images/product-img.jpg">
 						<div class="sizes">
@@ -236,7 +241,7 @@
 					<p class="price">129 р. 00 к.</p>
 					<p class="old-price">129 р. 00 к.</p>
 				</div>
-				<div class="product">
+				<div class="product only-desktop">
 					<a href="" class="img">
 						<img src="images/product-img.jpg">
 						<div class="sizes">
@@ -253,7 +258,7 @@
 					<p class="price">129 р. 00 к.</p>
 					<p class="old-price">129 р. 00 к.</p>
 				</div>
-				<div class="product">
+				<div class="product only-desktop">
 					<a href="" class="img">
 						<img src="images/product-img.jpg">
 						<div class="sizes">
@@ -270,7 +275,7 @@
 					<p class="price">129 р. 00 к.</p>
 					<p class="old-price">129 р. 00 к.</p>
 				</div>
-				<div class="product">
+				<div class="product only-desktop">
 					<a href="" class="img">
 						<img src="images/product-img.jpg">
 						<div class="sizes">
@@ -287,7 +292,7 @@
 					<p class="price">129 р. 00 к.</p>
 					<p class="old-price">129 р. 00 к.</p>
 				</div>
-				<div class="product with-sale">
+				<div class="product with-sale only-desktop">
 					<a href="" class="img">
 						<img src="images/product-img.jpg">
 						<div class="sizes">
