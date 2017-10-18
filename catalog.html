@@ -13,7 +13,7 @@
 		<a href="index.html" class="logo"></a>
 			<ul class="menu">
 				<li class="drop-menu">
-					<a href="">Каталог</a>
+					<a href="catalog.html">Каталог</a>
 					<ul>
 						<li><a href="">Christmas 2018</a></li>
 						<li><a href="">Осень-зима 2017/2018</a></li>
@@ -26,8 +26,8 @@
 						<li><a href="">Спорт и отдых</a></li>
 					</ul>
 				</li>
-				<li><a href="">Sale</a></li>
-				<li><a href="">Доставка и оплата</a></li>
+				<li><a href="catalog.html?sale">Sale</a></li>
+				<li><a href="shipping.html">Доставка и оплата</a></li>
 				<li><a href="">Контакты</a></li>
 				<li class="only-mobile"><a href="">Список желаний</a></li>
 				<li class="account only-mobile"><button class="black bttn">Войти / Зарегистрироваться</button></li>
@@ -312,23 +312,25 @@
 				<button class="black bttn">Показать еще</button>
 			</div>
 		</section>
-		<section class="trend">
+		<section class="subscribe">
 			<h2>Будьте в тренде с Lakbi</h2>
-			<hr>
+			<hr class="short">
 			<p>Подпишитесь и получите подарок: скидочный купон 10 BYN на любую модель Lakbi.</p>
 			<form action="post" class="clearfix">
 				<div class="name">
 					<label for="subscribe-name">Имя</label>
-					<input type="name" name="subscribe-name" id="subscribe-name" required>
+					<input type="name" name="name" id="subscribe-name" required>
 				</div>
 				<div class="email">
 					<label for="subscribe-email">e-mail</label>
-					<input type="email" name="subscribe-email" id="subscribe-email" required>
+					<input type="email" name="email" id="subscribe-email" required>
 				</div>
-				<input type="submit" name="subscribe-submit" class="black bttn" value="Подписаться на рассылку">
+				<input type="submit" name="submit" class="black bttn" value="Подписаться на рассылку">
 			</form>
 			<div class="subscribe-success">Вы подписаны на рассылку.</div>
-			<hr>
+		</section>
+		<section class="we-in-social">
+			<hr class="long">
 			<p>Мы в социальных сетях:</p>
 			<div class="social">
 				<button class="in"></button>

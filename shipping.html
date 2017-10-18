@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Каталог | Lakbi</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+</head>
+<body>
+	<header class="black">
+		<div class="dark"></div>
+		<nav class="wrapper">
+		<a href="index.html" class="logo"></a>
+			<ul class="menu">
+				<li class="drop-menu">
+					<a href="catalog.html">Каталог</a>
+					<ul>
+						<li><a href="">Christmas 2018</a></li>
+						<li><a href="">Осень-зима 2017/2018</a></li>
+						<li><a href="">Лето 2017</a></li>
+						<li><a href="">Весна 2017</a></li>
+						<li><a href="">Christmas 2017</a></li>
+						<li><a href="">Осень-зима 2016/2017. Часть 1</a></li>
+						<li><a href="">Осень-зима 2016/2017. Часть 2</a></li>
+						<li><a href="">Осень-зима 2016/2017. Часть 3</a></li>
+						<li><a href="">Спорт и отдых</a></li>
+					</ul>
+				</li>
+				<li><a href="catalog.html?sale">Sale</a></li>
+				<li><a href="">Доставка и оплата</a></li>
+				<li><a href="">Контакты</a></li>
+				<li class="only-mobile"><a href="">Список желаний</a></li>
+				<li class="account only-mobile"><button class="black bttn">Войти / Зарегистрироваться</button></li>
+				<li class="language only-mobile">
+					<a href="" class="active">Ru</a>
+					<a href="">En</a>
+				</li>
+			</ul>
+			<ul class="icons">
+				<li class="search">
+					<form>
+						<input type="search" name="search" placeholder="Что ищем?" autofocus>
+						<input type="submit" name="find">
+					</form>
+					<button></button>
+				</li>
+				<li class="account only-desktop-tablet"><button></button></li>
+				<li class="wish only-desktop-tablet"><a href=""></a></li>
+				<li class="cart"><a href=""></a></li>
+				<li class="language only-desktop-tablet"><a href="">En</a></li>
+				<li class="only-mobile"><button class="hamburger"></button></li>
+			</ul>
+			<div class="sign">
+				<button class="close"></button>
+				<div class="in">
+					<h3>Вход</h3>
+					<form method="post">
+						<input type="email" name="email" placeholder="E-mail" required>
+						<input type="password" name="password" placeholder="Пароль" required>
+						<button>Забыли пароль?</button>
+						<input type="submit" name="sign-in" value="Войти" class="black bttn">
+					</form>
+					<span class="with">или через:</span>
+					<div class="social">
+						<button class="in"></button>
+						<button class="fb"></button>
+						<button class="vk"></button>
+						<button class="lj"></button>
+						<button class="pi"></button>
+					</div>
+					<hr>
+					<button>Зарегистрироваться</button>
+				</div>
+				<div class="up">
+					<h3>Регистрация</h3>
+					<form method="post">
+						<input type="text" name="name" placeholder="Ваше имя" required>
+						<input type="email" name="email" placeholder="E-mail" required>
+						<input type="password" name="password" placeholder="Придумайте пароль" required>
+						<input type="password" name="password-repeat" placeholder="Повторите пароль" required>
+						<input type="submit" name="sign-up" value="Регистрация" class="black bttn">
+					</form>
+					<span class="with">войти через:</span>
+					<div class="social">
+						<button class="in"></button>
+						<button class="fb"></button>
+						<button class="vk"></button>
+						<button class="lj"></button>
+						<button class="pi"></button>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section class="breadcrumbs">
+		<div class="wrapper">
+			<a href="index.html">Главная</a> / Доставка и оплата
+		</div>
+		</section>
+		<section class="shipping wrapper">
+			<p>Для того, чтобы оформить заказ в интернет-магазине, Вам достаточно выполнить следующие действия:</p>
+			<div class="steps only-desktop-tablet">
+				<div class="numbers">
+					<div>1</div>
+					<span class="line"></span>
+					<div>2</div>
+					<span class="line"></span>
+					<div>3</div>
+					<span class="line"></span>
+					<div>4</div>
+					<span class="line"></span>
+					<div class="ready"></div>
+				</div>
+				<div class="description">
+					<div class="packing">
+						<div></div>
+						<p>Выбрать понравившийся товар в нашем каталоге и положить его в корзину;</p>
+					</div>
+					<div class="method">
+						<div></div>
+						<p>Выбрать наиболее подходящий способ оплаты и доставки;</p>
+					</div>
+					<div class="payment">
+						<div></div>
+						<p>Ввести необходимые контактные данные и адрес доставки;</p>
+					</div>
+					<div class="confirm">
+						<div></div>
+						<p>Подтвердить заказ.</p>
+					</div>
+				</div>
+			</div>
+			<div class="steps only-mobile">
+				<input type="radio" name="steps" id="step-1" checked>
+				<input type="radio" name="steps" id="step-2">
+				<input type="radio" name="steps" id="step-3">
+				<input type="radio" name="steps" id="step-4">
+				<div class="description">
+					<div class="packing">
+						<div></div>
+						<p>Шаг 1 <br>Выбрать понравившийся товар в <br>нашем каталоге и положить его в <br>корзину;</p>
+					</div>
+					<div class="method">
+						<div></div>
+						<p>Шаг 2 <br>Выбрать наиболее подходящий <br>способ оплаты и доставки;</p>
+					</div>
+					<div class="payment">
+						<div></div>
+						<p>Шаг 3 <br>Ввести необходимые контактные <br>данные и адрес доставки;</p>
+					</div>
+					<div class="confirm">
+						<div></div>
+						<p>Шаг 4 <br>Подтвердить заказ.</p>
+					</div>
+				</div>
+				<div class="indicators">
+					<label for="step-1"></label>
+					<label for="step-2"></label>
+					<label for="step-3"></label>
+					<label for="step-4"></label>
+				</div>
+			</div>
+			<section class="countries wrapper">
+				<input type="radio" name="countries" id="rb" checked>
+				<input type="radio" name="countries" id="other-countries">
+				<div class="tabs">
+					<label for="rb">Для жителей РБ</label>
+					<div class="separator only-mobile"></div>
+					<label for="other-countries">Для других стран</label>
+				</div>
+				<div class="country rb">
+					<div class="accordion">
+			            <input id="rb-shipping-methods" type="checkbox" class="rb-shipping-methods" name="rb" checked>
+			            <label for="rb-shipping-methods">Способы доставки</label>
+			            <div class="shipping-methods">
+			            	<div class="shipping-method">
+			            		<div class="number">1</div>
+			            		<div>
+			            			<span class="method-title">РУП «Белпочта»</span>
+			            			<p>Обычная доставка, срок доставки: 4-6 рабочих дня, стоимость доставки - 60 000 бел. руб.</p>
+			            		</div>
+			            	</div>
+			            	<div class="shipping-method">
+			            		<div class="number">2</div>
+			            		<div>
+			            			<span class="method-title">Почта EMS</span>
+			            			<p>Ускоренная доставка почтой, срок доставки: 2-3 дня, стоимость доставки - 90 000 бел. руб.</p>
+			            		</div>
+			            	</div>
+			            	<div class="clearfix"></div>
+				            <p>При оплате заказа на почте взимается плата за покупку и комиссия за перевод наложенного платежа, которая составляет от 3% до 5% от стоимости заказа. <br>В отделении Белпочты можно расплатиться и наличными, и картой.</p>
+				            <p>При получении при себе необходимо иметь документ, удостоверяющий личность. <br>В отделении Белпочты можно расплатиться и наличными, и картой. При получении при себе необходимо иметь документ, удостоверяющий личность.</p>
+				            <p class="only-desktop-tablet">Самовывоз Lakbi возможен только при условии наличия выбранной Вами модели в ближайшем пункте самовывоза. Подробности можно узнать у консультанта по телефону +375 33 3620 500. Самовывоз осуществляется из наших фирменных магазинов по адресу:</p>
+				            <ul class="only-desktop-tablet">
+				            	<li>Минск, ул.Бобруйская, 6 ТЦ «Galileo»</li>
+				            	<li>Минск, ул.Сурганова, 57Б ТЦ «Новая Европа»</li>
+				            	<li>Брест, ул.Советская, 70/1</li>
+				            	<li>Витебск, ул. Ленина, д. 26А ТЦ «Марко-Сити»</li>
+				            	<li>Гомель, Речицкий проспект, 5  ТЦ «Мандарин Плаза»</li>
+				            </ul>
+				            <p class="only-desktop-tablet">При оплате заказа на почте взимается платеж за покупку и комиссия за перевод наложенного платежа, которая составляет от 3 до 5% от стоимости заказа. <br>В отделении Белпочты можно расплатиться и наличными, и картой. При получении при себе необходимо иметь документ, удостоверяющий личность.</p>
+				            <p>При заказе на общую сумму от 200. бел.руб. (включительно) доставка БЕСПЛАТНАЯ.</p>
+			            </div>
+		            </div>
+		            <div class="accordion">
+			            <input id="rb-payment-methods" type="checkbox" class="rb-payment-methods" name="rb">
+			            <label for="rb-payment-methods">Способы оплаты</label>
+		            </div>
+		            <div class="accordion">
+			            <input id="rb-return" type="checkbox" class="rb-return" name="rb">
+			            <label for="rb-return">Возврат</label>
+		            </div>
+		            <div class="accordion">
+			            <input id="rb-discount-program" type="checkbox" class="rb-discount-program" name="rb">
+			            <label for="rb-discount-program">Дисконтная программа</label>
+		            </div>
+				</div>
+				<div class="country other-countries">
+					<div class="accordion">
+			            <input id="other-countries-shipping-methods" type="checkbox" class="other-countries-shipping-methods" name="other-countries">
+			            <label for="other-countries-shipping-methods">Способы доставки</label>
+		            </div>
+		            <div class="accordion">
+			            <input id="other-countries-payment-methods" type="checkbox" class="other-countries-payment-methods" name="other-countries">
+			            <label for="other-countries-payment-methods">Способы оплаты</label>
+		            </div>
+		            <div class="accordion">
+			            <input id="other-countries-return" type="checkbox" class="other-countries-return" name="other-countries">
+			            <label for="other-countries-return">Возврат</label>
+		            </div>
+		            <div class="accordion">
+			            <input id="other-countries-discount-program" type="checkbox" class="other-countries-discount-program" name="other-countries">
+			            <label for="other-countries-discount-program">Дисконтная программа</label>
+		            </div>
+				</div>
+			</section>
+		</section>
+		<section class="info">
+			<hr class="long">
+			<p class="wrapper">Производитель: Общество с дополнительной ответственностью «Лакби».<br>
+			Зарегистрировано Брестским областным исполнительным комитетом 30.04.2003г. за № 290298597.<br>
+			Юридический адрес: 224020 г.Брест, ул. Московская 202-6<br>
+			УНП 290298597</p>
+		</section>
+		<section class="we-in-social">
+			<hr class="long">
+			<p>Мы в социальных сетях:</p>
+			<div class="social">
+				<button class="in"></button>
+				<button class="fb"></button>
+				<button class="vk"></button>
+				<button class="lj"></button>
+				<button class="pi"></button>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="wrapper">
+			<p>ОДО «Лакби» <br>Беларусь, ул. Московская, д.202-6</p>
+			<p>УНП 00000000000</p>
+			<a href="mailto:lakbi@mail.ru">lakbi@mail.ru</a>
+		</div>
+	</footer>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

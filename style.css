@@ -24,6 +24,11 @@
 }
 
 @font-face {
+	font-family: HelveticaNeueHeavy;
+	src: url(fonts/helveticaneue-heavy.woff) format('woff');
+}
+
+@font-face {
 	font-family: ProximaNovaLight;
 	src: url(fonts/proxima-nova-light.woff) format('woff');
 }
@@ -239,6 +244,7 @@ nav input[type="search"] {
 }
 
 nav input[type="search"]::placeholder { color: #fff;}
+.black nav input[type="search"]::placeholder { color: #000;}
 
 input[type="search"]::-webkit-search-cancel-button {
 	-webkit-appearance: none;
@@ -247,9 +253,13 @@ input[type="search"]::-webkit-search-cancel-button {
 	background: url(images/search-close.svg);
 }
 
+.black input[type="search"]::-webkit-search-cancel-button {
+	background: url(images/search-close-black.svg);
+}
+
 .black nav input[type="search"] {
-	border-bottom: 1px solid rgba(201, 201, 201, .5);
-	color: rgba(201, 201, 201, .5);
+	border-bottom: 1px solid #000;
+	color: #000;
 }
 
 nav .icons button,
@@ -545,15 +555,15 @@ header > a {
 	margin: 4px 0;
 }
 
-.filter .accordion > input:checked ~ label::before { transform: rotate(-45deg);}
+.accordion > input:checked ~ label::before { transform: rotate(-45deg);}
 
-.filter .accordion div {
+.accordion > div {
     height: 0;
     transition: .4s;
     overflow: hidden;
 }
 
-.filter .accordion > .collection:checked ~ div { height: 310px;}
+.accordion > #collection:checked ~ div { height: 310px;}
 
 .catalog .head {
 	margin: 40px 0 30px 0;
@@ -685,7 +695,7 @@ header > a {
 .products button {
 	width: 268px;
 	text-transform: none;
-	margin: 0 auto;
+	margin: 0 auto 30px auto;
 }
 
 .novelties,
@@ -717,18 +727,23 @@ h2 {
 .sale a { margin: 7.41vh 0 0 0;}
 
 .instagram h2,
-.trend h2 {
+.subscribe h2 {
 	font: 30px/36px ProximaNovaSemibold;
 	margin: 80px 0 30px 0;
 	text-align: center;
 }
 
-.instagram hr,
-.trend hr {
-	background-color: #000;
+hr.short {
+	background: #000;
 	width: 70px;
 	height: 2px;
 	margin: 0 auto;
+}
+
+hr.long {
+	background: #e5e5e5;
+    width: 100%;
+    height: 1px;
 }
 
 .instagram div {
@@ -789,34 +804,165 @@ h2 {
 	left: 60%;
 }
 
-.trend p {
+.shipping { padding: 50px 0;}
+
+.shipping p { font: 16px/26px HelveticaNeueLight;}
+
+.shipping .numbers {
+	display: flex;
+	align-items: center;
+}
+
+.shipping .description { display: flex;}
+
+.shipping .numbers div {
+	width: 36px;
+	height: 36px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	font: 16px/36px HelveticaNeueLight;
+	text-align: center;
+}
+
+.shipping .line {
+	width: 240px;
+	height: 1px;
+	background: #000;
+	margin: 0 0 0 6px;
+}
+
+.shipping .ready { background: url(images/ready.svg) no-repeat center / 50% 50%;}
+
+.shipping .description > div {
+	flex-basis: 276px;
+    margin: 40px 10px 115px 0;
+}
+
+.shipping .description > div div {
+	width: 60px;
+	height: 60px;
+}
+
+.shipping .packing div { background: url(images/packing.svg) no-repeat center;}
+.shipping .method div { background: url(images/method.svg) no-repeat center;}
+.shipping .payment div { background: url(images/payment.svg) no-repeat center;}
+.shipping .confirm div { background: url(images/confirm.svg) no-repeat center;}
+
+.countries { width: 970px;}
+
+.countries input, .country { display: none;}
+
+#rb:checked ~ .rb, #other-countries:checked ~ .other-countries{ display: block;}
+#rb:checked ~ .tabs label[for="rb"], #other-countries:checked ~ .tabs label[for="other-countries"] { text-decoration: underline;}
+
+.countries .tabs {
+	width: 535px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto 70px auto;
+}
+
+.shipping label { cursor: pointer;}
+
+.countries .tabs label { font: 30px/26px HelveticaNeueLight;}
+
+.country label {
+	display: block;
+	height: 63px;
+	padding: 0 30px;
+	margin: 0 0 4px 0;
+	background: #f1f1f1;
+	font: 16px/63px HelveticaNeueLight;
+	position: relative;
+}
+
+.country label::after {
+	content: "";
+	width: 16px;
+    height: 10px;
+    background: url(images/triangle-black.svg) no-repeat center;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    margin: -5px 0 0 0;
+    transition: .4s;
+    transform: rotate(0deg);
+}
+
+.accordion > input:checked ~ label::after { transform: rotate(180deg);}
+
+.accordion > #rb-shipping-methods:checked ~ div { height: 760px;}
+
+.shipping-method {
+	width: 47%;
+	display: flex;
+    justify-content: space-around;
+	float: left;
+}
+
+.shipping-method .number {
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	border: 2px solid #e1e1e1;
+	border-radius: 50%;
+	text-align: center;
+	font: 18px/50px HelveticaNeueHeavy;
+}
+
+.shipping-method .method-title {
+	font: 16px/16px HelveticaNeueMedium;
+	text-transform: uppercase;
+}
+
+.shipping-method p { width: 370px;}
+
+.shipping-methods > p,
+.shipping-methods > ul li {
+	font: 16px/26px HelveticaNeueLight;
+	color: #adadad;
+}
+
+.shipping-methods > p { margin: 30px 30px 0 30px;}
+
+.shipping-methods > ul {
+	list-style: square;
+	padding: 0 0 0 45px;
+}
+
+.subscribe p {
 	font: 16px/24px HelveticaNeueLight;
 	text-align: center;
 }
 
-.trend form {
+.info p {
+	font: 14px/26px HelveticaNeueLight;
+	margin: 40px auto;
+}
+
+.subscribe form {
 	width: 570px;
 	height: 140px;
 	margin: 0 auto 70px auto;
 }
 
-.trend .name {
+.subscribe .name {
 	width: 50%;
 	float: left;
 }
 
-.trend .email {
+.subscribe .email {
 	width: 50%;
 	float: right;
 }
 
-.trend label {
+.subscribe label {
 	font: 11px/24px HelveticaNeueLight;
 	color: #afafaf;
 	text-transform: uppercase;
 }
 
-.trend input:not([type="submit"]) {
+.subscribe input:not([type="submit"]) {
 	font: 20px/24px HelveticaNeueRoman;
 	width: 270px;
 	height: 30px;
@@ -824,33 +970,26 @@ h2 {
 	display: block;
 }
 
-.trend input[type="submit"] {
+.subscribe input[type="submit"] {
 	margin: 0 auto;
 	position: relative;
 	top: 37px;
 }
 
-.trend hr:nth-of-type(2) {
-    background: #e5e5e5;
-    width: 100%;
-    height: 1px;
-}
+.subscribe p { margin: 15px 0 70px 0;}
 
-.trend p:nth-of-type(1) {
-	margin: 15px 0 70px 0;
-}
-
-.trend p:nth-of-type(2) {
+.we-in-social p {
 	font: 16px/24px HelveticaNeueRoman;
 	margin: 47px 0 30px 0;
+	text-align: center;
 }
 
-.trend .social {
+.we-in-social .social {
 	width: 378px;
 	margin-bottom: 59px;
 }
 
-.trend .social button {
+.we-in-social .social button {
 	width: 58px;
 	height: 58px;
 }
@@ -879,9 +1018,7 @@ footer {
 	background: #f8f8f8;
 }
 
-footer .wrapper {
-	position: relative;
-}
+footer .wrapper { position: relative;}
 
 footer .wrapper * {
 	font: 16px/24px HelveticaNeueRoman;
@@ -903,9 +1040,7 @@ footer p:nth-of-type(2) {
 @media (max-width: 1200px) {
 	.only-desktop { display: none;}
 
-	.wrapper {
-		width: 940px;
-	}
+	.wrapper { width: 940px;}
 
 	nav .menu {
 		width: 510px;
@@ -932,8 +1067,8 @@ footer p:nth-of-type(2) {
     	margin: 0 40px 30px 0;
     }
 
-    .product .img {
-    	height: 490px;}
+    .product .img { height: 490px;}
+    .shipping .line { width: 180px;}
 
 	footer { height: 100px;}
 	footer p:first-of-type {
@@ -946,6 +1081,9 @@ footer p:nth-of-type(2) {
 	.only-mobile { display: none;}
 
 	.black .account button { background-image: url(images/account-black.svg);}
+
+	.shipping-method:first-of-type { margin: 40px 0 0 30px;}
+	.shipping-method:nth-child(2) { margin: 40px 0 0 0;}
 }
 
 @media (max-width: 970px) {
@@ -1037,9 +1175,7 @@ footer p:nth-of-type(2) {
 		font: 3.75vw/8.44vw HelveticaNeueRoman;
 	}
 
-	.language .active {
-		border: 1px solid #000;
-	}
+	.language .active {	border: 1px solid #000;}
 
 	nav input[type="search"] {
 		width: 31.25vw;
@@ -1078,10 +1214,7 @@ footer p:nth-of-type(2) {
 		margin: 0;
 	}
 
-	#filter:checked ~ aside {
-		height: 106.875vw;
-		/*height: auto;*/
-	}
+	#filter:checked ~ aside { height: 106.875vw;}
 
 	label[for="filter"],
 	.filter > button {
@@ -1143,10 +1276,7 @@ footer p:nth-of-type(2) {
 	    position: relative;
 	}
 
-	.novelties h2,
-	.sale h2 {
-		margin: 60vh 0 0 0;
-	}
+	.novelties h2, .sale h2 { margin: 60vh 0 0 0;}
 
 	.novelties a,
 	.sale a {
@@ -1171,54 +1301,164 @@ footer p:nth-of-type(2) {
 		position: relative;
 	}
 
-	.instagram h2, .trend h2 {
+	section.shipping { padding: 0;}
+
+	.shipping .description {
+		display: block;
+		overflow: hidden;
+	    white-space: nowrap;
+	    word-wrap: normal;
+	}
+
+	.shipping .description > div {
+		width: 100%;
+		margin: 0;
+		display: inline-block;
+		position: relative;
+		right: 0;
+		transition: .4s;
+	}
+
+	.shipping .description > div div { margin: 0 auto;}
+
+	.steps {
+		height: 206px;
+		margin: 35px 0;
+		position: relative;
+	}
+
+	.steps p { text-align: center;}
+
+	.steps input { display: none;}
+
+	.steps .indicators {
+		display: flex;
+		width: 15.31vw;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+
+	label[for^="step-"] {
+		display: inline-block;
+		width: 2.19vw;
+		height: 2.19vw;
+		background: #000;
+	}
+
+	#step-2:checked ~ .description div { right: 100%;}
+	#step-3:checked ~ .description div { right: 200%;}
+	#step-4:checked ~ .description div { right: 300%;}
+
+	#step-1:checked ~ div label[for="step-1"],
+	#step-2:checked ~ div label[for="step-2"],
+	#step-3:checked ~ div label[for="step-3"],
+	#step-4:checked ~ div label[for="step-4"] {
+		outline: 1px solid #000;
+		outline-offset: 1px;
+	}
+
+	#step-1:checked ~ div label[for="step-2"]::after,
+	#step-2:checked ~ div label[for="step-3"]::after,
+	#step-3:checked ~ div label[for="step-4"]::after,
+	#step-2:checked ~ div label[for="step-1"]::after,
+	#step-3:checked ~ div label[for="step-2"]::after,
+	#step-4:checked ~ div label[for="step-3"]::after {
+		content: "";
+		width: 4vw;
+		height: 5vw;
+		background: url(images/arrow-right.svg) no-repeat center;
+		position: absolute;
+		top: 14%;
+	}
+
+	#step-1:checked ~ div label[for="step-2"]::after,
+	#step-2:checked ~ div label[for="step-3"]::after,
+	#step-3:checked ~ div label[for="step-4"]::after {
+		background: url(images/arrow-right.svg) no-repeat center;
+		right: 0;
+	}
+
+	#step-2:checked ~ div label[for="step-1"]::after,
+	#step-3:checked ~ div label[for="step-2"]::after,
+	#step-4:checked ~ div label[for="step-3"]::after {
+		background: url(images/arrow-left.svg) no-repeat center;
+		left: 0;
+	}
+
+	.countries .tabs {
+		width: 263px;
+		margin: 0 auto 14vw auto;
+	}
+
+	.countries .tabs label { font: 14px/26px HelveticaNeueLight;}
+
+	.tabs .separator {
+		width: 1px;
+		height: 34px;
+		background: #f0f0f0;
+	}
+
+	.accordion > #rb-shipping-methods:checked ~ div { height: 970px;}
+
+	.shipping-method {
+	    width: 100%;
+	    display: block;
+	    float: none;
+	}
+
+	.shipping-method p {
+		width: auto;
+		margin: 0;
+	}
+
+	.shipping-methods > p { margin: 20px 0;}
+
+	.shipping-method .number { margin: 28px 0 22px 0;}
+
+	.instagram h2, .subscribe h2 {
 	    font: 5vw/11.25vw ProximaNovaSemibold;
 	    margin: 9.37vw 0 3.125vw 0;
 	    letter-spacing: 2px;
 	}
 
-	.instagram div {
-	    margin: 17px 0 0 0;
-	}
+	.instagram div { margin: 17px 0 0 0;}
 
 	.instagram a {
 	    width: 200px;
 	    height: 200px;
 	}
 
-	.trend p { font: 4.37vw/7.5vw HelveticaNeueLight !important;}
-	.trend p:nth-of-type(1) { margin: 4.69vw 0 6.25vw 0;}
+	.subscribe p { font: 4.37vw/7.5vw HelveticaNeueLight !important;}
+	.subscribe p:nth-of-type(1) { margin: 4.69vw 0 6.25vw 0;}
 
-	.trend form {
+	.subscribe form {
 	    width: 87.5vw;
 	    height: auto;
 	    margin: 0 auto 9.37vw auto;
 	}
 
-	.trend .name,
-	.trend .email {
+	.subscribe .name,
+	.subscribe .email {
 	    width: 100%;
 	    float: none;
 	}
 
-	.trend input:not([type="submit"]) {
-		width: 100%;
-	}
+	.subscribe input:not([type="submit"]) {	width: 100%;}
 
-	.trend input[type="submit"],
-	.trend .email {
+	.subscribe input[type="submit"],
+	.subscribe .email {
 	    margin: 9.37vw auto 0 auto;
 	    position: static;
 	}
 
-	.trend p:nth-of-type(2) { margin: 11vw 0 9.37vw 0;}
+	.subscribe p:nth-of-type(2) { margin: 11vw 0 9.37vw 0;}
 
-	.trend .social {
+	.we-in-social .social {
 	    width: 78.75vw;
 	    margin-bottom: 14.375vw;
 	}
 
-	.trend .social button {
+	.we-in-social .social button {
 	    width: 12.5vw;
 	    height: 12.5vw;
 	}
@@ -1233,9 +1473,7 @@ footer p:nth-of-type(2) {
 	    padding: 10.94vw 0 0 0;
 	}
 
-	footer .wrapper * {
-	    font: 4.375vw/7.5vw HelveticaNeueRoman;
-	}
+	footer .wrapper * { font: 4.375vw/7.5vw HelveticaNeueRoman;}
 
 	footer p:first-of-type {
 	    float: none;

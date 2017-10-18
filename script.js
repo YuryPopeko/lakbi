@@ -18,6 +18,12 @@ function lightside() {
 }
 
 
+if(document.location.href.indexOf('?sale') > 0) {
+	document.getElementById('sale').setAttribute('checked', '');
+	el('.breadcrumbs div').innerHTML = '<a href="index.html">Главная</a> / Распродажа';
+}
+
+
 try {
 	let search = el('.search form').style;
 	el('.search button').addEventListener('click', function() {
