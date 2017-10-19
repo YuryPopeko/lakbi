@@ -94,6 +94,19 @@ input {
 	background: 0;
 }
 
+hr.short {
+	background: #000;
+	width: 70px;
+	height: 2px;
+	margin: 0 auto;
+}
+
+hr.long {
+	background: #e5e5e5;
+    width: 100%;
+    height: 1px;
+}
+
 #map { height: 100%;}
 
 input[type="submit"] { cursor: pointer;}
@@ -138,7 +151,7 @@ header.main {
 }
 
 .black nav a { color: #000;}
-.black .logo { background-image: url(images/logo-black.png);}
+.black .logo { background: url(images/logo-black.png) no-repeat center / 100% 100%;}
 
 nav > ul {
 	display: inline-flex;
@@ -322,6 +335,7 @@ nav .search input[type="submit"] { display: none;}
 	position: absolute;
 	top: 10px;
 	right: 10px;
+	cursor: pointer;
 }
 
 .sign h3 {
@@ -617,26 +631,26 @@ header > a {
 	float: left;
 }
 
-.product {
+.products .product {
 	width: 270px;
 	float: left;
 	position: relative;
 	margin: 0 30px 30px 0;
 }
 
-.product * {
+.products .product * {
 	text-align: center;
 	font: 14px/26px HelveticaNeueLight;
 	margin: 0;
 }
 
-.product .img {
+.products .product .img {
 	display: block;
 	height: 400px;
 	overflow: hidden;
 }
 
-.product .sizes {
+.products .product .sizes {
 	position: relative;
 	height: 50px;
 	background: rgba(0,0,0,.5);
@@ -644,7 +658,7 @@ header > a {
 	transition: .4s;
 }
 
-.product .sizes div {
+.products .product .sizes div {
 	margin: 0 auto;
 	padding: 10px 0;
 	width: 170px;
@@ -652,7 +666,7 @@ header > a {
 	justify-content: space-between;
 }
 
-.product .sizes span {
+.products .product .sizes span {
 	font: 12px/28px HelveticaNeueLight;
 	color: #fff;
 	display: inline-block;
@@ -661,17 +675,17 @@ header > a {
 	border: 1px solid #fff;
 }
 
-.product .img:hover .sizes { bottom: 58px;}
+.products .product .img:hover .sizes { bottom: 58px;}
 
-.product .title {
+.products .product .title {
 	color: #9b9ea8;
 	display: block;
 	margin: 10px 0;
 }
 
-.product .price { color: #000;}
+.products .product .price { color: #000;}
 
-.product .old-price {
+.products .product .old-price {
 	font: 12px/26px HelveticaNeueLight;
 	color: #ca2221;
 	text-decoration: line-through;
@@ -690,10 +704,7 @@ header > a {
 	left: 10px;
 }
 
-.product img {
-	width: 100%;
-	height: 100%;
-}
+.products .product img { width: 100%;}
 
 .products button {
 	width: 268px;
@@ -729,24 +740,162 @@ h2 {
 .novelties a { margin: 7.41vh 0 0 700px;}
 .sale a { margin: 7.41vh 0 0 0;}
 
+section.account {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 60px 0;
+}
+
+.account .menu { height: 267px;}
+
+.account > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 270px;
+}
+
+.account > div label {
+	display: block;
+	height: 63px;
+	background: #f1f1f1;
+	font: 16px/63px HelveticaNeueLight;
+	color: #353535;
+	text-align: center;
+	cursor: pointer;
+}
+
+#wishlist:checked ~ div label[for="wishlist"],
+#profile:checked ~ div label[for="profile"],
+#history:checked ~ div label[for="history"],
+#cart:checked ~ div label[for="cart"] {
+	background: #767676;
+	color: #fff;
+}
+
+.account > .item { display: none;}
+
+.account .wishlist {
+	width: 870px;
+}
+
+.wishlist .item {
+	border: 1px solid #ececec;
+	position: relative;
+	margin: 0 0 18px 0;
+}
+
+.wishlist .item img {
+	float: left;
+	margin: 0 60px 0 0;
+}
+
+.wishlist .item > div { float: left;}
+
+.wishlist .item .title {
+	font: 22px/26px HelveticaNeueLight;
+	margin: 55px 0 20px 0;
+}
+
+.wishlist .item .price {
+	font: 14px/26px HelveticaNeueLight;
+	color: #767676;
+}
+
+.wishlist .item .size-title {
+	font: 14px/26px HelveticaNeueRoman;
+	color: #161616;
+	margin: 10px 0 5px 0;
+}
+
+.wishlist .item .size {
+	width: 36px;
+	height: 36px;
+	font: 12px/36px HelveticaNeueRoman;
+	color: #676767;
+	border: 1px solid #cdcdcd;
+	text-align: center;
+	position: relative;
+}
+
+.wishlist .item .size::after {
+	content: "";
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 17px 17px 0 0;
+	border-color: #000 transparent transparent transparent;
+	position: absolute;
+	top: -1px;
+	left: -1px;
+}
+
+.wishlist .item button {
+	position: absolute;
+	right: 35px;
+}
+
+.wishlist .item button:first-of-type { bottom: 100px;}
+.wishlist .item button:last-of-type { bottom: 40px;}
+
+.wishlist .close {
+	background: url(images/search-close-black.svg) no-repeat center / 60% 60%;
+}
+
+.account .profile {
+	width: 770px;
+	height: 167px;
+	justify-content: space-between;
+	border: 1px solid #ececec;
+	padding: 50px;
+}
+
+.account #wishlist:checked ~ .wishlist { display: block;}
+.account #profile:checked ~ .profile { display: flex;}
+.account #history:checked ~ .history { display: block;}
+.account #cart:checked ~ .cart { display: block;}
+
+.account .profile div {	width: 360px;}
+
+.account .profile div *:not(button) {
+	display: block;
+	width: 100%;
+}
+
+.account .profile label {
+	font: 12px/26px HelveticaNeueLight;
+	color: #767676;
+}
+
+.account .profile label:last-of-type { margin: 40px 0 0 0;}
+
+.account .profile input {
+	border-bottom: 2px solid #767676;
+	font: 18px/26px HelveticaNeueLight;
+}
+
+.account .edit {
+	width: 35px;
+	height: 35px;
+	background: url(images/edit.svg) no-repeat;
+	float: right;
+	position: relative;
+	top: -42px;
+}
+
+.account .edit:hover {
+	background: url(images/edit-hover.svg) no-repeat;
+}
+
+section.product { padding: 44px 0 0 0;}
+
 .instagram h2,
 .subscribe h2 {
 	font: 30px/36px ProximaNovaSemibold;
 	margin: 80px 0 30px 0;
 	text-align: center;
-}
-
-hr.short {
-	background: #000;
-	width: 70px;
-	height: 2px;
-	margin: 0 auto;
-}
-
-hr.long {
-	background: #e5e5e5;
-    width: 100%;
-    height: 1px;
 }
 
 .instagram div {
@@ -863,7 +1012,17 @@ hr.long {
 #rb:checked ~ .tabs label[for="rb"],
 #other-countries:checked ~ .tabs label[for="other-countries"],
 #contacts:checked ~ .tabs label[for="contacts"],
-#shops:checked ~ .tabs label[for="shops"] { text-decoration: underline;}
+#shops:checked ~ .tabs label[for="shops"],
+#minsk:checked ~ label[for="minsk"],
+#brest:checked ~ label[for="brest"],
+#vitebsk:checked ~ label[for="vitebsk"],
+#gomel:checked ~ label[for="gomel"],
+#grodno:checked ~ label[for="grodno"],
+#orsha:checked ~ label[for="orsha"],
+#baranovichi:checked ~ label[for="baranovichi"],
+#kobrin:checked ~ label[for="kobrin"],
+#borisov:checked ~ label[for="borisov"],
+#zhodino:checked ~ label[for="zhodino"] { text-decoration: underline;}
 
 .tabs {
 	width: 535px;
@@ -873,10 +1032,8 @@ hr.long {
 	margin: 52px auto 70px auto;
 }
 
-.tabs label {
-	font: 30px/26px HelveticaNeueLight;
-	cursor: pointer;
-}
+.contacts label { cursor: pointer;}
+.tabs label { font: 30px/26px HelveticaNeueLight;}
 
 .tabs .separator {
 	width: 1px;
@@ -961,6 +1118,7 @@ hr.long {
 .contacts-tab > div {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .contacts-tab > div div { width: 33%;}
@@ -972,7 +1130,8 @@ hr.long {
 	text-align: center;
 }
 
-.contacts-tab > div p {
+.contacts-tab > div p,
+.contacts-tab label {
 	font: 16px/26px HelveticaNeueLight;
 	text-align: center;
 	margin: 0;
@@ -1085,8 +1244,36 @@ footer p:nth-of-type(2) {
 	margin: 0;
 }
 
+.not-found .logo {
+	width: 134px;
+	height: 42px;
+	margin: 118px auto 165px auto;
+}
+
+.not-found h1 {
+	font: 24px/100px HelveticaNeueHeavy;
+	color: #dfdfdf;
+	margin: 10px 0;
+}
+
+.not-found p {
+	font: 16px/26px HelveticaNeueLight;
+	color: #adadad;
+	text-align: center;
+	margin: 0 0 50px 0;
+}
+
+.not-found a { margin: 0 auto;}
+
+.hanger {
+	width: 100px;
+	height: 63px;
+	margin: 0 auto;
+	background: url(images/hanger.svg) no-repeat center / 100% 100%;
+}
+
 @media (min-width: 1201px) {
-	.product:nth-child(3n) { margin-right: 0;}
+	.products .product:nth-child(3n) { margin-right: 0;}
 }
 
 @media (max-width: 1200px) {
@@ -1112,15 +1299,42 @@ footer p:nth-of-type(2) {
 
 	.choosed, .products { width: 700px;}
 
-	.product:nth-child(2n) { margin-right: 0;}
+	.products .product:nth-child(2n) { margin-right: 0;}
 
-	.product {
+	.products .product {
     	width: 330px;
     	margin: 0 40px 30px 0;
     }
 
-    .product .img { height: 490px;}
+    .products .product .img { height: 490px;}
     .shipping .line { width: 180px;}
+
+    section.account { padding: 40px 0;}
+
+    .account > div { width: 220px;}
+
+    .account .profile {
+    	width: 630px;
+    	padding: 35px;
+    	height: 195px;
+    }
+
+    .account .wishlist { width: 700px;}
+    .wishlist .item img { margin: 0 40px 0 0;}
+    .wishlist .item .title { margin: 35px 0 20px 0;}
+    
+    .wishlist .item button:first-of-type {
+		bottom: 20px;
+		right: 25px;
+    }
+
+    .wishlist .item button:last-of-type {
+    	width: 192px;
+    	bottom: 20px;
+    	left: 240px;
+    }
+
+    .account .profile div { width: 300px;}
 
 	footer { height: 100px;}
 	footer p:first-of-type {
@@ -1287,12 +1501,12 @@ footer p:nth-of-type(2) {
 
 	.choosed, .products { width: 100%;}
 
-	.product {
+	.products .product {
 		width: 100%;
 		margin: 0 0 30px 0;
 	}
 
-	.product .img { height: 414px;}
+	.products .product .img { height: 414px;}
 
 	.choosed .item {
 		height: 25px;
@@ -1353,7 +1567,9 @@ footer p:nth-of-type(2) {
 		position: relative;
 	}
 
-	section.shipping { padding: 0;}
+	section.shipping {
+		padding: 12px 0;
+	}
 
 	.shipping .description {
 		display: block;
@@ -1439,7 +1655,7 @@ footer p:nth-of-type(2) {
 
 	.tabs {
 		width: 263px;
-		margin: 18px auto 14vw auto;
+		margin: 5.6vw auto 10vw auto;
 	}
 
 	.contacts .tabs { width: 220px;}
@@ -1454,6 +1670,11 @@ footer p:nth-of-type(2) {
 	.contacts-tab > div { display: block;}
 	.contacts-tab > div div { width: auto;}
 	.contacts-tab span, .contacts-tab > div p { text-align: left;}
+
+	.contacts-tab label {
+		display: inline-block;
+		margin: 10px 30px 0 0;
+	}
 
 	.contacts .map { height: 480px;}
 
@@ -1473,6 +1694,36 @@ footer p:nth-of-type(2) {
 	.shipping-methods > p { margin: 20px 0;}
 
 	.shipping-method .number { margin: 28px 0 22px 0;}
+
+	.account {padding: 20px 0;}
+
+	.account > div {
+		width: 100%;
+		margin: 0 0 19px 0;
+	}
+
+	.account .item {
+		flex-direction: column;
+		border: 0;
+		padding: 0;
+		height: auto;
+		margin: 15px 0 0 0;
+	}
+
+	.account .profile div { width: 100%;}
+	
+	.wishlist .item { margin: 20px 0;}
+	.wishlist .item > div,
+	.wishlist .item img { float: none;}
+
+	.wishlist .item button,
+	.wishlist .item button:last-of-type {
+		position: static;
+		width: 100%;
+	}
+
+	.wishlist .item button:first-of-type {margin: 20px 0 8px 0;}
+	.wishlist .close { top: 0;}
 
 	.instagram h2, .subscribe h2 {
 	    font: 5vw/11.25vw ProximaNovaSemibold;
@@ -1536,12 +1787,29 @@ footer p:nth-of-type(2) {
 
 	footer p:first-of-type {
 	    float: none;
-	    margin: 9.375vw 0;
+	    margin: 0 0 9.375vw 0;
 	}
 
 	footer p:nth-of-type(2) {
 	    position: relative;
 	    top: -1.56vw;
 	    margin: 0;
+	}
+
+	.not-found .logo {
+		width: 67px;
+		height: 22px;
+		margin: 29px auto 63px auto;
+	}
+
+	.not-found h1 {
+		font: 18px/50px HelveticaNeueHeavy;
+		color: #dfdfdf;
+		margin: 0 0 20px 0;
+	}
+
+	.hanger {
+		width: 77px;
+		height: 48px;
 	}
 }

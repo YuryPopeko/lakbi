@@ -22,6 +22,12 @@ if(document.location.href.indexOf('?sale') > 0) {
 	document.getElementById('sale').setAttribute('checked', '');
 	el('.breadcrumbs div').innerHTML = '<a href="index.html">Главная</a> / Распродажа';
 }
+if(document.location.href.indexOf('?wishlist') > 0) {
+	document.getElementById('wishlist').setAttribute('checked', '');
+}
+if(document.location.href.indexOf('?cart') > 0) {
+	document.getElementById('cart').setAttribute('checked', '');
+}
 
 
 try {
@@ -69,7 +75,7 @@ try {
 
 try {
 	let sign = el('.sign').style;
-	els('.account button').forEach(function(item) {
+	els('nav .account button').forEach(function(item) {
 		item.addEventListener('click', function() {
 			el('ul.menu').style.top = '';
 			sign.top = '50%';
@@ -143,6 +149,13 @@ try {
 		}
 	});
 } catch(e) {}
+
+
+els('.wishlist .item .close').forEach(function(item) {
+	item.addEventListener('click', function(e) {
+		e.target.parentElement.style.display = 'none';
+	});
+});
 
 
 try {

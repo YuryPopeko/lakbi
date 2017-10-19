@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Контакты | Lakbi</title>
+	<title>Мой аккаунт | Lakbi</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" href="images/lakbi.ico">
 	<meta name="viewport" content="width=device-width,user-scalable=no">
@@ -96,83 +96,79 @@
 	<main>
 		<section class="breadcrumbs">
 		<div class="wrapper">
-			<a href="index.html">Главная</a> / Контакты
+			<a href="index.html">Главная</a> / Мой аккаунт
 		</div>
 		</section>
-		<section class="contacts">
-			<input type="radio" name="contacts-tab" id="contacts" hidden checked>
-			<input type="radio" name="contacts-tab" id="shops" hidden>
-			<div class="tabs">
-				<label for="contacts">Контакты</label>
-				<div class="separator"></div>
-				<label for="shops">Магазины</label>
+		<section class="account wrapper">
+			<input type="radio" name="account-menu" id="wishlist" hidden>
+			<input type="radio" name="account-menu" id="profile" hidden checked>
+			<input type="radio" name="account-menu" id="history" hidden>
+			<input type="radio" name="account-menu" id="cart" hidden>
+			<div class="menu">
+				<label for="wishlist">Wishlist</label>
+				<label for="profile">Личный кабинет</label>
+				<label for="history">История покупок</label>
+				<label for="cart">Корзина</label>
 			</div>
-			<div class="wrapper contacts-tab first">
-				<p>ОДО «Лакби»</p>
+			<hr class="only-mobile long">
+			<div class="item wishlist">
+				<div class="item clearfix">
+					<img src="images/wishlist-item.jpg">
+					<div>
+						<p class="title">Платье 11397</p>
+						<span class="price">105 руб.</span>
+						<p class="size-title">Размер:</p>
+						<div class="size">38</div>
+						<button class="black bttn">Опубликовать в соц.сетях</button>
+						<button class="black bttn">Отправить в корзину</button>
+					</div>
+					<span class="close"></span>
+				</div>
+				<hr class="only-mobile long">
+				<div class="item clearfix">
+					<img src="images/wishlist-item.jpg">
+					<div>
+						<p class="title">Платье 11397</p>
+						<span class="price">105 руб.</span>
+						<p class="size-title">Размер:</p>
+						<div class="size">38</div>
+						<button class="black bttn">Опубликовать в соц.сетях</button>
+						<button class="black bttn">Отправить в корзину</button>
+					</div>
+					<span class="close"></span>
+				</div>
+				<hr class="only-mobile long">
+				<div class="item clearfix">
+					<img src="images/wishlist-item.jpg">
+					<div>
+						<p class="title">Платье 11397</p>
+						<span class="price">105 руб.</span>
+						<p class="size-title">Размер:</p>
+						<div class="size">38</div>
+						<button class="black bttn">Опубликовать в соц.сетях</button>
+						<button class="black bttn">Отправить в корзину</button>
+					</div>
+					<span class="close"></span>
+				</div>
+			</div>
+			<form class="item profile">
 				<div>
-					<div>
-						<span>Адрес:</span>
-						<p>Беларусь, г. Брест, ул. Московская, д. 202-7</p>
-					</div>
-					<div>
-						<span>Телефон/факс:</span>
-						<p>тел.: +375 29 36 21 500 (Velcom) <br>тел: +375 33 36 20 500 (MTC)</p>
-					</div>
-					<div>
-						<span>Email:</span>
-						<p>lakbishop.by@gmail.com</p>
-					</div>
+					<label for="name">ФИО</label>
+					<input type="text" name="name" id="name" value="Наталья">
+					<button class="edit"></button>
+					<label for="tel">Телефон</label>
+					<input type="tel" name="tel" id="tel" value="+000 00 000-00-00">
+					<button class="edit"></button>
 				</div>
-			</div>
-			<div class="wrapper contacts-tab second">
 				<div>
-					<input type="radio" name="city" id="minsk" checked hidden>
-					<label for="minsk">Минск</label>
-					<input type="radio" name="city" id="brest" hidden>
-					<label for="brest">Брест</label>
-					<input type="radio" name="city" id="vitebsk" hidden>
-					<label for="vitebsk">Витебск</label>
-					<input type="radio" name="city" id="gomel" hidden>
-					<label for="gomel">Гомель</label>
-					<input type="radio" name="city" id="grodno" hidden>
-					<label for="grodno">Гродно</label>
-					<input type="radio" name="city" id="orsha" hidden>
-					<label for="orsha">Орша</label>
-					<input type="radio" name="city" id="baranovichi" hidden>
-					<label for="baranovichi">Барановичи</label>
-					<input type="radio" name="city" id="kobrin" hidden>
-					<label for="kobrin">Кобрин</label>
-					<input type="radio" name="city" id="borisov" hidden>
-					<label for="borisov">Борисов</label>
-					<input type="radio" name="city" id="zhodino" hidden>
-					<label for="zhodino">Жодино</label>
+					<label for="address">Адрес</label>
+					<input type="text" name="address" id="address" value="г. Брест, проспект Машерова, 18">
+					<button class="edit"></button>
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" value="example@mail">
+					<button class="edit"></button>
 				</div>
-			</div>
-			<section class="map">
-				<div id="map"></div>
-			</section>
-		</section>
-		<section class="info">
-			<hr class="long">
-			<p class="wrapper">Частное унитарное предприятие по оказанию услуг «Лакби-Инвест» <br>Свидетельство о государственной регистрации серии КО №0021152 от 23.10.2012 <br>УНП 291103271 <br>Дата регистрации интернет-магазина в Торговом реестре 13.04.2015, номер регистрации 243026</p>
-			<hr class="long">
-		</section>
-		<section class="subscribe">
-			<h2>Будьте в тренде с Lakbi</h2>
-			<hr class="short">
-			<p>Подпишитесь и получите подарок: скидочный купон 10 BYN на любую модель Lakbi.</p>
-			<form action="post" class="clearfix">
-				<div class="name">
-					<label for="subscribe-name">Имя</label>
-					<input type="name" name="name" id="subscribe-name" required>
-				</div>
-				<div class="email">
-					<label for="subscribe-email">e-mail</label>
-					<input type="email" name="email" id="subscribe-email" required>
-				</div>
-				<input type="submit" name="submit" class="black bttn" value="Подписаться на рассылку">
 			</form>
-			<div class="subscribe-success">Вы подписаны на рассылку.</div>
 		</section>
 		<section class="we-in-social">
 			<hr class="long">
@@ -194,6 +190,5 @@
 		</div>
 	</footer>
 	<script type="text/javascript" src="script.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCi8vHrzG6geWqaTNbPDQuAf1w5V4TIIWA&callback=initMap" async defer></script>
 </body>
 </html>
