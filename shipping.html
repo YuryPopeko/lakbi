@@ -2,8 +2,9 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Каталог | Lakbi</title>
+	<title>Доставка и оплата | Lakbi</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/lakbi.ico">
 	<meta name="viewport" content="width=device-width,user-scalable=no">
 </head>
 <body>
@@ -27,8 +28,8 @@
 					</ul>
 				</li>
 				<li><a href="catalog.html?sale">Sale</a></li>
-				<li><a href="">Доставка и оплата</a></li>
-				<li><a href="">Контакты</a></li>
+				<li><a href="shipping.html">Доставка и оплата</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
 				<li class="only-mobile"><a href="">Список желаний</a></li>
 				<li class="account only-mobile"><button class="black bttn">Войти / Зарегистрироваться</button></li>
 				<li class="language only-mobile">
@@ -162,16 +163,16 @@
 				</div>
 			</div>
 			<section class="countries wrapper">
-				<input type="radio" name="countries" id="rb" checked>
-				<input type="radio" name="countries" id="other-countries">
+				<input type="radio" name="countries" id="rb" hidden checked>
+				<input type="radio" name="countries" id="other-countries" hidden>
 				<div class="tabs">
 					<label for="rb">Для жителей РБ</label>
-					<div class="separator only-mobile"></div>
+					<div class="separator"></div>
 					<label for="other-countries">Для других стран</label>
 				</div>
 				<div class="country rb">
 					<div class="accordion">
-			            <input id="rb-shipping-methods" type="checkbox" class="rb-shipping-methods" name="rb" checked>
+			            <input id="rb-shipping-methods" type="checkbox" class="rb-shipping-methods" name="rb" hidden checked>
 			            <label for="rb-shipping-methods">Способы доставки</label>
 			            <div class="shipping-methods">
 			            	<div class="shipping-method">
@@ -204,33 +205,33 @@
 			            </div>
 		            </div>
 		            <div class="accordion">
-			            <input id="rb-payment-methods" type="checkbox" class="rb-payment-methods" name="rb">
+			            <input id="rb-payment-methods" type="checkbox" class="rb-payment-methods" name="rb" hidden>
 			            <label for="rb-payment-methods">Способы оплаты</label>
 		            </div>
 		            <div class="accordion">
-			            <input id="rb-return" type="checkbox" class="rb-return" name="rb">
+			            <input id="rb-return" type="checkbox" class="rb-return" name="rb" hidden>
 			            <label for="rb-return">Возврат</label>
 		            </div>
 		            <div class="accordion">
-			            <input id="rb-discount-program" type="checkbox" class="rb-discount-program" name="rb">
+			            <input id="rb-discount-program" type="checkbox" class="rb-discount-program" name="rb" hidden>
 			            <label for="rb-discount-program">Дисконтная программа</label>
 		            </div>
 				</div>
 				<div class="country other-countries">
 					<div class="accordion">
-			            <input id="other-countries-shipping-methods" type="checkbox" class="other-countries-shipping-methods" name="other-countries">
+			            <input id="other-countries-shipping-methods" type="checkbox" class="other-countries-shipping-methods" name="other-countries" hidden>
 			            <label for="other-countries-shipping-methods">Способы доставки</label>
 		            </div>
 		            <div class="accordion">
-			            <input id="other-countries-payment-methods" type="checkbox" class="other-countries-payment-methods" name="other-countries">
+			            <input id="other-countries-payment-methods" type="checkbox" class="other-countries-payment-methods" name="other-countries" hidden>
 			            <label for="other-countries-payment-methods">Способы оплаты</label>
 		            </div>
 		            <div class="accordion">
-			            <input id="other-countries-return" type="checkbox" class="other-countries-return" name="other-countries">
+			            <input id="other-countries-return" type="checkbox" class="other-countries-return" name="other-countries" hidden>
 			            <label for="other-countries-return">Возврат</label>
 		            </div>
 		            <div class="accordion">
-			            <input id="other-countries-discount-program" type="checkbox" class="other-countries-discount-program" name="other-countries">
+			            <input id="other-countries-discount-program" type="checkbox" class="other-countries-discount-program" name="other-countries" hidden>
 			            <label for="other-countries-discount-program">Дисконтная программа</label>
 		            </div>
 				</div>

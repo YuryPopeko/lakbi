@@ -68,7 +68,8 @@ body {
 }
 
 hr {
-	border: none;
+	border: 0;
+	margin: 0;
 }
 
 ul {
@@ -92,6 +93,8 @@ input {
 	border: 0;
 	background: 0;
 }
+
+#map { height: 100%;}
 
 input[type="submit"] { cursor: pointer;}
 
@@ -501,8 +504,6 @@ header > a {
 	float: left;
 }
 
-.catalog input { display: none;}
-
 .filter label {
 	font: 12px/26px HelveticaNeueLight;
 	text-transform: uppercase;
@@ -556,6 +557,8 @@ header > a {
 }
 
 .accordion > input:checked ~ label::before { transform: rotate(-45deg);}
+
+.accordion label { cursor: pointer;}
 
 .accordion > div {
     height: 0;
@@ -835,7 +838,7 @@ hr.long {
 
 .shipping .description > div {
 	flex-basis: 276px;
-    margin: 40px 10px 115px 0;
+    margin: 40px 10px 63px 0;
 }
 
 .shipping .description > div div {
@@ -850,21 +853,36 @@ hr.long {
 
 .countries { width: 970px;}
 
-.countries input, .country { display: none;}
+.country, .contacts-tab.first, .contacts-tab.second { display: none;}
 
-#rb:checked ~ .rb, #other-countries:checked ~ .other-countries{ display: block;}
-#rb:checked ~ .tabs label[for="rb"], #other-countries:checked ~ .tabs label[for="other-countries"] { text-decoration: underline;}
+#rb:checked ~ .rb,
+#other-countries:checked ~ .other-countries,
+#contacts:checked ~ .contacts-tab.first,
+#shops:checked ~ .contacts-tab.second { display: block;}
 
-.countries .tabs {
+#rb:checked ~ .tabs label[for="rb"],
+#other-countries:checked ~ .tabs label[for="other-countries"],
+#contacts:checked ~ .tabs label[for="contacts"],
+#shops:checked ~ .tabs label[for="shops"] { text-decoration: underline;}
+
+.tabs {
 	width: 535px;
 	display: flex;
 	justify-content: space-between;
-	margin: 0 auto 70px auto;
+	align-items: center;
+	margin: 52px auto 70px auto;
 }
 
-.shipping label { cursor: pointer;}
+.tabs label {
+	font: 30px/26px HelveticaNeueLight;
+	cursor: pointer;
+}
 
-.countries .tabs label { font: 30px/26px HelveticaNeueLight;}
+.tabs .separator {
+	width: 1px;
+	height: 68px;
+	background: #f0f0f0;
+}
 
 .country label {
 	display: block;
@@ -929,6 +947,40 @@ hr.long {
 	list-style: square;
 	padding: 0 0 0 45px;
 }
+
+.contacts .tabs { width: 330px;}
+
+.contacts-tab { margin: 0 auto 50px auto;}
+
+.contacts-tab > p {
+	font: 22px/26px HelveticaNeueLight;
+	margin: 60px 0 75px 0;
+	text-align: center;
+}
+
+.contacts-tab > div {
+	display: flex;
+	justify-content: space-around;
+}
+
+.contacts-tab > div div { width: 33%;}
+
+.contacts-tab span {
+	font: 16px/26px HelveticaNeueMedium;
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+}
+
+.contacts-tab > div p {
+	font: 16px/26px HelveticaNeueLight;
+	text-align: center;
+	margin: 0;
+}
+
+.contacts .map { height: 695px;}
+
+.contacts + .info p { text-align: center;}
 
 .subscribe p {
 	font: 16px/24px HelveticaNeueLight;
@@ -1385,18 +1437,25 @@ footer p:nth-of-type(2) {
 		left: 0;
 	}
 
-	.countries .tabs {
+	.tabs {
 		width: 263px;
-		margin: 0 auto 14vw auto;
+		margin: 18px auto 14vw auto;
 	}
 
-	.countries .tabs label { font: 14px/26px HelveticaNeueLight;}
+	.contacts .tabs { width: 220px;}
+
+	.tabs label { font: 14px/26px HelveticaNeueLight;}
 
 	.tabs .separator {
-		width: 1px;
 		height: 34px;
-		background: #f0f0f0;
 	}
+
+	.contacts-tab > p { margin: 50px 0 30px 0;}
+	.contacts-tab > div { display: block;}
+	.contacts-tab > div div { width: auto;}
+	.contacts-tab span, .contacts-tab > div p { text-align: left;}
+
+	.contacts .map { height: 480px;}
 
 	.accordion > #rb-shipping-methods:checked ~ div { height: 970px;}
 

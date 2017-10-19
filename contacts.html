@@ -2,13 +2,13 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Главная | Lakbi</title>
+	<title>Контакты | Lakbi</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" href="images/lakbi.ico">
 	<meta name="viewport" content="width=device-width,user-scalable=no">
 </head>
 <body>
-	<header class="main">
+	<header class="black">
 		<div class="dark"></div>
 		<nav class="wrapper">
 		<a href="index.html" class="logo"></a>
@@ -92,76 +92,49 @@
 				</div>
 			</div>
 		</nav>
-		<h1>Коллекция Лето <br>2017</h1>
-		<a href="" class="white bttn">Смотреть коллекцию</a>
-		<div class="indicators">
-			<button class="passive"></button>
-			<button class="active"></button>
-		</div>
 	</header>
 	<main>
-		<section class="novelties">
-			<div class="wrapper">
-				<h2>Новинки</h2>
-				<a href="" class="black bttn">Смотреть</a>
-			</div>
+		<section class="breadcrumbs">
+		<div class="wrapper">
+			<a href="index.html">Главная</a> / Контакты
+		</div>
 		</section>
-		<section class="sale">
-			<div class="wrapper">
-				<h2>Распродажа</h2>
-				<a href="" class="black bttn">Смотреть</a>
+		<section class="contacts">
+			<input type="radio" name="contacts-tab" id="contacts" hidden checked>
+			<input type="radio" name="contacts-tab" id="shops" hidden>
+			<div class="tabs">
+				<label for="contacts">Контакты</label>
+				<div class="separator"></div>
+				<label for="shops">Магазины</label>
 			</div>
+			<div class="wrapper contacts-tab first">
+				<p>ОДО «Лакби»</p>
+				<div>
+					<div>
+						<span>Адрес:</span>
+						<p>Беларусь, г. Брест, ул. Московская, д. 202-7</p>
+					</div>
+					<div>
+						<span>Телефон/факс:</span>
+						<p>тел.: +375 29 36 21 500 (Velcom) <br>тел: +375 33 36 20 500 (MTC)</p>
+					</div>
+					<div>
+						<span>Email:</span>
+						<p>lakbishop.by@gmail.com</p>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper contacts-tab second">
+				<p>магазиныда</p>
+			</div>
+			<section class="map">
+				<div id="map"></div>
+			</section>
 		</section>
-		<section class="instagram">
-			<h2>Instagram #LakbiFashion</h2>
-			<hr class="short">
-			<div>
-				<a href="">
-					<img src="https://instagram.fhen1-1.fna.fbcdn.net/t51.2885-15/e35/22499847_1961480917438262_4442725153213775872_n.jpg">
-					<span class="likes">297</span>
-					<span class="commentaries">8</span>
-				</a>
-				<a href="">
-					<img src="https://instagram.fhen1-1.fna.fbcdn.net/t51.2885-15/e35/22427287_788574087992965_890754682224377856_n.jpg">
-					<span class="likes">297</span>
-					<span class="commentaries">8</span>
-				</a>
-				<a href="">
-					<img src="https://instagram.fhen1-1.fna.fbcdn.net/t51.2885-15/e35/22071484_501413620208909_2035849463632756736_n.jpg">
-					<span class="likes">297</span>
-					<span class="commentaries">8</span>
-				</a>
-				<a href="">
-					<img src="https://instagram.fhen1-1.fna.fbcdn.net/t51.2885-15/e35/22071327_284532655366870_126285967081340928_n.jpg">
-					<span class="likes">297</span>
-					<span class="commentaries">8</span>
-				</a>
-				<a href="">
-					<img src="https://instagram.fhen1-1.fna.fbcdn.net/t51.2885-15/e35/21373109_543667502653056_191711783721893888_n.jpg">
-					<span class="likes">297</span>
-					<span class="commentaries">8</span>
-				</a>
-				<a href="">
-					<img src="https://instagram.fhen1-1.fna.fbcdn.net/t51.2885-15/e35/21480142_1928713320701015_2177308575213289472_n.jpg">
-					<span class="likes">297</span>
-					<span class="commentaries">8</span>
-				</a>
-				<a href="">
-					<img src="https://instagram.fhen1-1.fna.fbcdn.net/t51.2885-15/e35/22071514_1964899707085753_4607056095221907456_n.jpg">
-					<span class="likes">297</span>
-					<span class="commentaries">8</span>
-				</a>
-				<a href="">
-					<img src="https://instagram.fhen1-1.fna.fbcdn.net/t51.2885-15/e35/21984642_1447023815380844_1575419632242655232_n.jpg">
-					<span class="likes">297</span>
-					<span class="commentaries">8</span>
-				</a>
-				<a href="">
-					<img src="https://instagram.fhen1-1.fna.fbcdn.net/t51.2885-15/e35/21985204_1910202579245788_3407095378644828160_n.jpg">
-					<span class="likes">297</span>
-					<span class="commentaries">8</span>
-				</a>
-			</div>
+		<section class="info">
+			<hr class="long">
+			<p class="wrapper">Частное унитарное предприятие по оказанию услуг «Лакби-Инвест» <br>Свидетельство о государственной регистрации серии КО №0021152 от 23.10.2012 <br>УНП 291103271 <br>Дата регистрации интернет-магазина в Торговом реестре 13.04.2015, номер регистрации 243026</p>
+			<hr class="long">
 		</section>
 		<section class="subscribe">
 			<h2>Будьте в тренде с Lakbi</h2>
@@ -200,5 +173,6 @@
 		</div>
 	</footer>
 	<script type="text/javascript" src="script.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCi8vHrzG6geWqaTNbPDQuAf1w5V4TIIWA&callback=initMap" async defer></script>
 </body>
 </html>

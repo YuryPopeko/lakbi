@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Каталог | Lakbi</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/lakbi.ico">
 	<meta name="viewport" content="width=device-width,user-scalable=no">
 </head>
 <body>
@@ -28,7 +29,7 @@
 				</li>
 				<li><a href="catalog.html?sale">Sale</a></li>
 				<li><a href="shipping.html">Доставка и оплата</a></li>
-				<li><a href="">Контакты</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
 				<li class="only-mobile"><a href="">Список желаний</a></li>
 				<li class="account only-mobile"><button class="black bttn">Войти / Зарегистрироваться</button></li>
 				<li class="language only-mobile">
@@ -104,11 +105,11 @@
 				<span class="found only-desktop-tablet">Найдено: 287 товаров</span>
 			</div>
 			<div class="accordion">
-				<input id="filter" type="checkbox">
+				<input id="filter" type="checkbox" hidden>
 				<label for="filter" class="black bttn only-mobile"></label>
 				<aside class="filter">
 				    <div class="accordion">
-			            <input id="collection" type="checkbox" class="collection" name="filter">
+			            <input id="collection" type="checkbox" class="collection" name="filter" hidden>
 			            <label for="collection">Коллекция</label>
 			            <div>
 			                <ul>
@@ -125,21 +126,21 @@
 			            </div>
 		            </div>
 		            <div class="accordion">
-						<input id="category" type="checkbox" class="category" name="filter">
+						<input id="category" type="checkbox" class="category" name="filter" hidden>
 						<label for="category">Категория</label>
 						<div></div>
 		            </div>
 		            <div class="accordion">
-						<input id="size" type="checkbox" class="size" name="filter">
+						<input id="size" type="checkbox" class="size" name="filter" hidden>
 						<label for="size">Размер</label>
 						<div></div>
 		            </div>
 		            <div>
-		            	<input type="checkbox" id="novelties" name="novelties">
+		            	<input type="checkbox" id="novelties" name="novelties" hidden>
 		            	<label for="novelties">Новинки</label>
 		            </div>
 		            <div>
-		            	<input type="checkbox" id="sale" name="sale">
+		            	<input type="checkbox" id="sale" name="sale" hidden>
 		            	<label for="sale">Распродажа</label>
 		            </div>
 		            <button class="black bttn only-mobile">Применить</button>
