@@ -172,7 +172,7 @@ try {
 
 function initMap() {
 var map = new google.maps.Map(document.getElementById('map'), {
-  center: {lat: 40.674, lng: -73.945},
+  center: {lat: 52.0896256, lng: 23.7384159},
   zoom: 16,
   styles: [
   {
