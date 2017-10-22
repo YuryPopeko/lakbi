@@ -78,7 +78,7 @@ try {
 	els('nav .account button').forEach(function(item) {
 		item.addEventListener('click', function() {
 			el('ul.menu').style.top = '';
-			sign.top = '50%';
+			sign.top = '50vh';
 			darkside();
 		});
 	});
@@ -101,11 +101,11 @@ try {
 	let header = el('header').style;
 	el('.indicators .passive').addEventListener('click', function(e) {
 		header.backgroundImage = 'url(images/goa.jpg)';
-		el('.indicators .active').classList = 'passive';
+		el('.indicators .active').className = 'passive';
 		e.target.className = 'active';
 		el('.indicators .passive').addEventListener('click', function(e) {
 			header.background = '';
-			el('.indicators .active').classList = 'passive';
+			el('.indicators .active').className = 'passive';
 			e.target.className = 'active';
 		});
 	});
@@ -151,11 +151,13 @@ try {
 } catch(e) {}
 
 
-els('.wishlist .item .close').forEach(function(item) {
-	item.addEventListener('click', function(e) {
-		e.target.parentElement.style.display = 'none';
+try {
+	els('.wishlist .item .close').forEach(function(item) {
+		item.addEventListener('click', function(e) {
+			e.target.parentElement.style.display = 'none';
+		});
 	});
-});
+} catch(e) {}
 
 
 try {

@@ -577,6 +577,7 @@ header > a {
 	margin: 0 22px 0 0;
 	transform: rotate(0deg);
 	transition: .4s;
+	transform-origin: 48% 60%;
 	font-size: 20px;
 }
 
