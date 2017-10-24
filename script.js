@@ -155,10 +155,17 @@ try {
 	els('.wishlist .item .close').forEach(function(item) {
 		item.addEventListener('click', function(e) {
 			e.target.parentElement.style.display = 'none';
+      if(e.target.parentElement.nextElementSibling) e.target.parentElement.nextElementSibling.style.display = 'none';
 		});
 	});
-} catch(e) {}
 
+  els('.history .item .close').forEach(function(item) {
+    item.addEventListener('click', function(e) {
+      e.target.parentElement.style.display = 'none';
+      if(e.target.parentElement.nextElementSibling) e.target.parentElement.nextElementSibling.style.display = 'none';
+    });
+  });
+} catch(e) {}
 
 try {
 	els('.instagram a').forEach(function(item) {
