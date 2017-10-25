@@ -38,6 +38,11 @@
 	src: url(fonts/proxima-nova-semibold.otf);
 }
 
+@font-face {
+	font-family: ProximaNovaExtrabld;
+	src: url(fonts/proxima-nova-extrabld.woff) format('woff');
+}
+
 body {
 	margin: 0;
 	transition: .4s;
@@ -69,7 +74,7 @@ body {
 
 hr {
 	border: 0;
-	margin: 0;
+	margin: 0 auto;
 }
 
 ul {
@@ -98,7 +103,6 @@ hr.short {
 	background: #000;
 	width: 70px;
 	height: 2px;
-	margin: 0 auto;
 }
 
 hr.long {
@@ -352,6 +356,8 @@ nav .search input[type="submit"] { display: none;}
 	right: 10px;
 	cursor: pointer;
 }
+
+.close.simple { background: url(images/search-close-black.svg) no-repeat center / 60% 60%;}
 
 .sign h3 {
 	text-align: center;
@@ -892,9 +898,6 @@ section.account {
 .wishlist .item button:last-of-type,
 .history .item button:last-of-type { bottom: 40px;}
 
-.wishlist .close,
-.history .close { background: url(images/search-close-black.svg) no-repeat center / 60% 60%;}
-
 .account .profile {
 	width: 770px;
 	height: 167px;
@@ -1388,21 +1391,34 @@ section.wear-with .product:last-child { margin: 0;}
 }
 
 .subscribe-success {
-	width: 400px;
-	height: 200px;
-	box-shadow: 0px 6px 40px -10px #000;
-	border-radius: 15px;
-	margin: -100px 0 0 -200px;
-	background: #fff url(images/success.png) no-repeat 50% 60%;
+	width: 408px;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	border: 1px solid #000;
+	padding: 55px 180px;
 	position: fixed;
 	top: 50%;
 	left: 50%;
 	z-index: 1;
 	text-align: center;
-	font: 22px/60px FuturaNormal;
 	transition: .4s;
 	display: none;
 	opacity: 0;
+}
+
+.subscribe-success span {
+	font: 20px/28px ProximaNovaExtrabld;
+	text-transform: uppercase;
+}
+
+.subscribe-success hr {
+	width: 185px;
+	margin: 20px auto 35px auto;
+}
+
+.subscribe-success p {
+	font: 16px/26px HelveticaNeueLight;
+	margin: 0;
 }
 
 footer {
@@ -2005,10 +2021,7 @@ footer p:nth-of-type(2) {
 	    height: 12.5vw;
 	}
 
-	.subscribe-success {
-    	width: 87.5vw;
-		margin: -100px 0 0 -43.25vw;
-    }
+	.subscribe-success { width: 87.5vw;}
 
 	footer {
 	    height: 48.44vw;
