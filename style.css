@@ -215,7 +215,7 @@ nav > ul > li {
 	display: inline-block;
 	position: relative;
 }
-
+/*
 .drop-menu { padding: 15px;}
 
 .drop-menu > a::after {
@@ -226,7 +226,7 @@ nav > ul > li {
 	height: 6px;
 	background: url(images/triangle.svg) no-repeat center;
 }
-
+*/
 .black .drop-menu > a::after { background-image: url(images/triangle-black.svg);}
 
 .drop-menu ul {
@@ -245,7 +245,7 @@ nav > ul > li {
 	font: 12px/36px HelveticaNeueRoman;
 	color: #c8c8c8;
 }
-
+/*
 .drop-menu a:hover { color: #fff;}
 .drop-menu:hover { background: #1e1e1e;}
 .drop-menu:hover > a { color: #c8c8c8;}
@@ -255,7 +255,7 @@ nav > ul > li {
     opacity: 1;
     z-index: 1;
 }
-
+*/
 nav .search form {
 	position: absolute;
 	left: 0px;
@@ -713,11 +713,13 @@ section.wear-with .img:hover .sizes { bottom: 58px;}
 
 .products .product .price { color: #000;}
 
-.products .product .old-price {
+.old-price {
 	font: 12px/26px HelveticaNeueLight;
 	color: #ca2221;
 	text-decoration: line-through;
 }
+
+.with-sale { position: relative;}
 
 .with-sale::before {
 	content: "Sale";
