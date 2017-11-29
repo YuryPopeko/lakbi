@@ -30,6 +30,24 @@ if(document.location.href.indexOf('?cart') > 0) {
 }
 
 
+if(document.location.href.indexOf('product') > 0) {
+  const sizeTableButton = el('button.size-table'),
+  tableOfSizes = el('.table-of-sizes');
+
+  function tableOfSizesClose() {
+    tableOfSizes.classList.remove('visible');
+    lightside();
+  }
+
+  sizeTableButton.addEventListener('click', function() {
+    darkside();
+    tableOfSizes.classList.add('visible');
+  });
+  el('.table-of-sizes .close').addEventListener('click', tableOfSizesClose);
+  el('.dark').addEventListener('click', tableOfSizesClose);
+}
+
+
 try {
 	let search = el('.search form').style;
 	el('.search button').addEventListener('click', function() {
