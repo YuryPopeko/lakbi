@@ -47,6 +47,19 @@ if(document.location.href.indexOf('product') > 0) {
   el('.dark').addEventListener('click', tableOfSizesClose);
 }
 
+if(document.location.href.indexOf('contacts') > 0) {
+  function select(src) {
+    if (src.value === 'Беларусь') {
+      el('.location .ru').setAttribute('hidden', '');
+      el('.location .by').removeAttribute('hidden');
+    }
+    if (src.value === 'Россия') {
+      el('.location .by').setAttribute('hidden', '');
+      el('.location .ru').removeAttribute('hidden');
+    }
+  }
+}
+
 
 try {
 	let search = el('.search form').style;

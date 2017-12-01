@@ -1223,17 +1223,7 @@ section.wear-with .product:last-child { margin: 0;}
 #rb:checked ~ .tabs label[for="rb"],
 #other-countries:checked ~ .tabs label[for="other-countries"],
 #contacts:checked ~ .tabs label[for="contacts"],
-#shops:checked ~ .tabs label[for="shops"],
-#minsk:checked ~ label[for="minsk"],
-#brest:checked ~ label[for="brest"],
-#vitebsk:checked ~ label[for="vitebsk"],
-#gomel:checked ~ label[for="gomel"],
-#grodno:checked ~ label[for="grodno"],
-#orsha:checked ~ label[for="orsha"],
-#baranovichi:checked ~ label[for="baranovichi"],
-#kobrin:checked ~ label[for="kobrin"],
-#borisov:checked ~ label[for="borisov"],
-#zhodino:checked ~ label[for="zhodino"] { text-decoration: underline;}
+#shops:checked ~ .tabs label[for="shops"] {text-decoration: underline}
 
 .tabs {
 	width: 535px;
@@ -1332,9 +1322,44 @@ section.wear-with .product:last-child { margin: 0;}
 
 .contacts-tab > div {
 	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
 }
+
+.contacts-tab .location {width: 570px}
+
+.location select {
+	width: 270px;
+    height: 48px;
+    border: 1px solid #000;
+    padding: 0 20px;
+}
+
+.map .placeholder {
+	width: 230px;
+	padding: 20px;
+	background: #fff;
+	text-align: left;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+	font: 14px/26px HelveticaNeueLight;
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	z-index: 1;
+}
+
+.map .placeholder::after {
+	content: "";
+	display: block;
+	width: 7px;
+	height: 7px;
+	background: #fff;
+	position: absolute;
+	bottom: -3.5px;
+	left: 48px;
+	transform: rotate(45deg);
+}
+
 
 .contacts-tab > div div { width: 33%;}
 
@@ -1352,7 +1377,10 @@ section.wear-with .product:last-child { margin: 0;}
 	margin: 0;
 }
 
-.contacts .map { height: 695px;}
+.contacts .map {
+	height: 695px;
+	position: relative;
+}
 
 .contacts + .info p { text-align: center;}
 
@@ -1947,9 +1975,13 @@ footer p:nth-of-type(2) {
 		margin: 10px 30px 0 0;
 	}
 
-	.contacts .map { height: 480px;}
+	.contacts-tab .location, .contacts-tab .location select {width: 100%}
 
-	.accordion > #rb-shipping-methods:checked ~ div { height: 970px;}
+	.contacts-tab .location select:first-child {margin: 0 0 20px 0}
+
+	.contacts .map {height: 480px}
+
+	.accordion > #rb-shipping-methods:checked ~ div {height: 970px}
 
 	.shipping-method {
 	    width: 100%;

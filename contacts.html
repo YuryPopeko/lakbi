@@ -125,30 +125,35 @@
 				</div>
 			</div>
 			<div class="wrapper contacts-tab second">
-				<div>
-					<input type="radio" name="city" id="minsk" checked hidden>
-					<label for="minsk">Минск</label>
-					<input type="radio" name="city" id="brest" hidden>
-					<label for="brest">Брест</label>
-					<input type="radio" name="city" id="vitebsk" hidden>
-					<label for="vitebsk">Витебск</label>
-					<input type="radio" name="city" id="gomel" hidden>
-					<label for="gomel">Гомель</label>
-					<input type="radio" name="city" id="grodno" hidden>
-					<label for="grodno">Гродно</label>
-					<input type="radio" name="city" id="orsha" hidden>
-					<label for="orsha">Орша</label>
-					<input type="radio" name="city" id="baranovichi" hidden>
-					<label for="baranovichi">Барановичи</label>
-					<input type="radio" name="city" id="kobrin" hidden>
-					<label for="kobrin">Кобрин</label>
-					<input type="radio" name="city" id="borisov" hidden>
-					<label for="borisov">Борисов</label>
-					<input type="radio" name="city" id="zhodino" hidden>
-					<label for="zhodino">Жодино</label>
+				<div class="location">
+					<select onchange="select(this)">
+						<option>Россия</option>
+						<option>Беларусь</option>
+					</select>
+					<select class="ru">
+						<option>Все города</option>
+						<option>Ростов Папа</option>
+						<option>mySiberia</option>
+						<option>Msc</option>
+						<option>СПб</option>
+					</select>
+					<select class="by" hidden>
+						<option>Все города</option>
+						<option>Минск</option>
+						<option>Брест</option>
+						<option>Витебск</option>
+						<option>Гомель</option>
+						<option>Гродно</option>
+						<option>Орша</option>
+						<option>Барановичи</option>
+						<option>Кобрин</option>
+						<option>Борисов</option>
+						<option>Жодино</option>
+					</select>
 				</div>
 			</div>
 			<section class="map">
+				<div class="placeholder">Саратов, ул. Московская, 113 - 117, ОТЦ «МИР», магазин «ForCopine»</div>
 				<div id="map"></div>
 			</section>
 		</section>
