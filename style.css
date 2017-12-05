@@ -160,10 +160,10 @@ input[type="submit"] { cursor: pointer;}
 	color: #000;
 }
 
-header { transition: .4s;}
+section.head { transition: .4s;}
 header .menu { height: 67px;}
 
-header.main {
+section.head {
 	height: 100vh;
 	background: url(images/header.jpg) no-repeat top / cover;
 	padding: 3.24vh 0 0 0;
@@ -330,7 +330,7 @@ nav .search input[type="submit"] { display: none;}
 	overflow: hidden;
 	position: fixed;
 	z-index: 1;
-	top: -70%;
+	top: -600%;
 	left: 50%;
 	margin: -247.5px 0 0 -160px;
 	padding: 45px 0 25px 0;
@@ -494,7 +494,14 @@ h1 {
 	text-transform: uppercase;
 }
 
-header > a {
+header.main {
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+section.head > a {
 	margin: 7vh auto 0 auto;
 }
 
@@ -1666,7 +1673,7 @@ footer p:nth-of-type(2) {
 	    font: 3.75vw/15vw HelveticaNeueRoman;
 	}
 
-	header.main {
+	section.head.main {
 	    height: 100vh;
 	    padding: 0;
 	}

@@ -129,13 +129,13 @@ try {
 
 
 try {
-	let header = el('header').style;
+	let head = el('section.head').style;
 	el('.indicators .passive').addEventListener('click', function(e) {
-		header.backgroundImage = 'url(images/goa.jpg)';
+		head.backgroundImage = 'url(images/goa.jpg)';
 		el('.indicators .active').className = 'passive';
 		e.target.className = 'active';
 		el('.indicators .passive').addEventListener('click', function(e) {
-			header.background = '';
+			head.background = '';
 			el('.indicators .active').className = 'passive';
 			e.target.className = 'active';
 		});
