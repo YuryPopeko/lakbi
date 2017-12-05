@@ -430,17 +430,15 @@ nav .search input[type="submit"] { display: none;}
 }
 
 .sign .social {	width: 252px;}
-.social button {
+.social * {
 	border-radius: 50%;
 	transition: .4s;
 }
 
-.sign .social button {
+.sign .social * {
 	width: 40px;
 	height: 40px;
 }
-
-.social button:hover { background-color: #dcdcdc;}
 
 .social .in { background: #393939 url(images/in.svg) no-repeat center / 35% 35%;}
 .social .fb { background: #393939 url(images/fb.svg) no-repeat center / 35% 35%;}
@@ -453,6 +451,8 @@ nav .search input[type="submit"] { display: none;}
 .social .vk:hover { background-image: url(images/vk-black.svg);}
 .social .lj:hover { background-image: url(images/lj-black.svg);}
 .social .pi:hover { background-image: url(images/pi-black.svg);}
+
+.social *:hover { background-color: #dcdcdc;}
 
 .sign hr {
 	background: #e6e6e6;
@@ -1235,6 +1235,13 @@ section.wear-with .product:last-child { margin: 0;}
 
 .contacts label { cursor: pointer;}
 
+.contacts label h1 {
+	font: 30px/26px HelveticaNeueLight;
+	display: inline;
+	color: #000;
+	text-transform: none;
+}
+
 .tabs label {
 	font: 30px/26px HelveticaNeueLight;
 	cursor: pointer;
@@ -1443,7 +1450,7 @@ section.wear-with .product:last-child { margin: 0;}
 	margin-bottom: 59px;
 }
 
-.we-in-social .social button {
+.we-in-social .social * {
 	width: 58px;
 	height: 58px;
 }
@@ -2102,7 +2109,7 @@ footer p:nth-of-type(2) {
 	    margin-bottom: 14.375vw;
 	}
 
-	.we-in-social .social button {
+	.we-in-social .social * {
 	    width: 12.5vw;
 	    height: 12.5vw;
 	}

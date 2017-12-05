@@ -198,17 +198,17 @@ try {
   });
 } catch(e) {}
 
-try {
-	els('.instagram a').forEach(function(item) {
-		item.addEventListener('drag', function(e) {
-			setTimeout(function() {
-				els('.instagram a').forEach(function(moveItem) {
-					moveItem.style.left = e.pageX + 'px';
-				});
-			}, 10);
-		});
-	});
-} catch(e) {}
+// try {
+// 	els('.instagram a').forEach(function(item) {
+// 		item.addEventListener('drag', function(e) {
+// 			setTimeout(function() {
+// 				els('.instagram a').forEach(function(moveItem) {
+// 					moveItem.style.left = e.pageX + 'px';
+// 				});
+// 			}, 10);
+// 		});
+// 	});
+// } catch(e) {}
 
 function initMap() {
 var map = new google.maps.Map(document.getElementById('map'), {
