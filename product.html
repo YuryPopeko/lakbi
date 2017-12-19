@@ -8,13 +8,53 @@
 	<meta name="viewport" content="width=device-width,user-scalable=no">
 </head>
 <body>
+	<div class="dark"></div>
+	<div class="sign">
+		<button class="close"></button>
+		<div class="in">
+			<h3>Вход</h3>
+			<form method="post">
+				<input type="email" name="email" placeholder="E-mail" required>
+				<input type="password" name="password" placeholder="Пароль" required>
+				<button>Забыли пароль?</button>
+				<input type="submit" name="sign-in" value="Войти" class="black bttn">
+			</form>
+			<span class="with">или через:</span>
+			<div class="social">
+				<button class="in"></button>
+				<button class="fb"></button>
+				<button class="vk"></button>
+				<button class="lj"></button>
+				<button class="pi"></button>
+			</div>
+			<hr>
+			<button>Зарегистрироваться</button>
+		</div>
+		<div class="up">
+			<h3>Регистрация</h3>
+			<form method="post">
+				<input type="text" name="name" placeholder="Ваше имя" required>
+				<input type="email" name="email" placeholder="E-mail" required>
+				<input type="password" name="password" placeholder="Придумайте пароль" required>
+				<input type="password" name="password-repeat" placeholder="Повторите пароль" required>
+				<input type="submit" name="sign-up" value="Регистрация" class="black bttn">
+			</form>
+			<span class="with">войти через:</span>
+			<div class="social">
+				<button class="in"></button>
+				<button class="fb"></button>
+				<button class="vk"></button>
+				<button class="lj"></button>
+				<button class="pi"></button>
+			</div>
+		</div>
+	</div>
 	<div class="table-of-sizes">
 		<button class="close">×</button>
 		<img src="images/table-of-sizes.jpg" class="only-desktop-tablet">
 		<img src="images/table-of-sizes-mobile.jpg" class="only-mobile">
 	</div>
 	<header class="black">
-		<div class="dark"></div>
 		<nav class="wrapper">
 		<a href="index.html" class="logo"></a>
 			<ul class="menu">
@@ -56,46 +96,6 @@
 				<li class="language only-desktop-tablet"><a href="">En</a></li>
 				<li class="only-mobile"><button class="hamburger"></button></li>
 			</ul>
-			<div class="sign">
-				<button class="close"></button>
-				<div class="in">
-					<h3>Вход</h3>
-					<form method="post">
-						<input type="email" name="email" placeholder="E-mail" required>
-						<input type="password" name="password" placeholder="Пароль" required>
-						<button>Забыли пароль?</button>
-						<input type="submit" name="sign-in" value="Войти" class="black bttn">
-					</form>
-					<span class="with">или через:</span>
-					<div class="social">
-						<button class="in"></button>
-						<button class="fb"></button>
-						<button class="vk"></button>
-						<button class="lj"></button>
-						<button class="pi"></button>
-					</div>
-					<hr>
-					<button>Зарегистрироваться</button>
-				</div>
-				<div class="up">
-					<h3>Регистрация</h3>
-					<form method="post">
-						<input type="text" name="name" placeholder="Ваше имя" required>
-						<input type="email" name="email" placeholder="E-mail" required>
-						<input type="password" name="password" placeholder="Придумайте пароль" required>
-						<input type="password" name="password-repeat" placeholder="Повторите пароль" required>
-						<input type="submit" name="sign-up" value="Регистрация" class="black bttn">
-					</form>
-					<span class="with">войти через:</span>
-					<div class="social">
-						<button class="in"></button>
-						<button class="fb"></button>
-						<button class="vk"></button>
-						<button class="lj"></button>
-						<button class="pi"></button>
-					</div>
-				</div>
-			</div>
 		</nav>
 	</header>
 	<main>
@@ -104,19 +104,20 @@
 			<a href="index.html">Главная</a> / Товар
 		</div>
 		</section>
-		<section class="product wrapper">
+		<section class="product wrapper clearfix">
 			<div class="nav">
 				<a href=""><</a>
 				<a href="">></a>
 			</div>
 			<h1 class="only-mobile wrapper">Платье 11397</h1>
 			<span class="price only-mobile wrapper">105 руб.</span>
-			<div class="with-sale">
+			<div class="image with-sale">
 				<img src="images/product.jpg">
+				<div hidden></div>
 			</div>
 			<div class="info wrapper">
 				<h1 class="only-desktop-tablet">Платье 11397</h1>
-				<span class="old-price">129 р. 00 к.</span>
+				<span class="old-price only-desktop-tablet">129 р. 00 к.</span>
 				<span class="price only-desktop-tablet">105 руб.</span>
 				<div class="color">
 					<b>Цвет:</b><br>

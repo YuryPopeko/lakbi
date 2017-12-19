@@ -198,17 +198,25 @@ try {
   });
 } catch(e) {}
 
-// try {
-// 	els('.instagram a').forEach(function(item) {
-// 		item.addEventListener('drag', function(e) {
-// 			setTimeout(function() {
-// 				els('.instagram a').forEach(function(moveItem) {
-// 					moveItem.style.left = e.pageX + 'px';
-// 				});
-// 			}, 10);
-// 		});
-// 	});
-// } catch(e) {}
+if(document.location.href.indexOf('product') > 0) {
+  const overlay = document.querySelector('.image div'),
+        img = document.querySelector('.image img');
+
+  img.addEventListener('mousemove', function(event) {zoom(event)});
+  overlay.addEventListener('mousemove', function(event) {zoom(event)});
+  overlay.addEventListener('mouseout', function(event) {noZoom(event)});
+
+  function zoom(event) {
+    overlay.removeAttribute('hidden', '');
+    let posX = event.offsetX ? (event.offsetX) : event.pageX - img.offsetLeft;
+    let posY = event.offsetY ? (event.offsetY) : event.pageY - img.offsetTop;
+    overlay.style.backgroundPosition = (-posX) + "px " + (-posY) + "px";
+  }
+
+  function noZoom(event) {
+    overlay.setAttribute('hidden', '');
+  }
+}
 
 function initMap() {
 var map = new google.maps.Map(document.getElementById('map'), {
