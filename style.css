@@ -556,17 +556,21 @@ section.head > a {
 }
 
 #novelties + label::before,
-#sale + label::before {
+#sale + label::before,
+.filter li label::before {
 	content: "";
 	display: inline-block;
 	width: 9px;
 	height: 9px;
-	margin: 0 20px 0 0;
 	border: 1px solid #000;
 }
 
+#novelties + label::before, #sale + label::before {margin: 0 20px 0 0}
+.filter li label::before {margin: 0 10px 0 20px}
+
 #novelties + label::after,
-#sale + label::after {
+#sale + label::after,
+.filter li label::after {
 	content: "";
 	display: inline-block;
 	width: 7px;
@@ -579,12 +583,15 @@ section.head > a {
 	transition: .4s;
 }
 
+.filter li label::after {left: 22px}
+
 #novelties:checked + label::after,
-#sale:checked + label::after {
+#sale:checked + label::after,
+.filter input:checked + label::after {
 	opacity: 1;
 }
 
-.filter .accordion label::before {
+.filter .accordion > label::before {
 	content: "+";
 	display: inline-block;
 	margin: 0 22px 0 0;
@@ -594,9 +601,10 @@ section.head > a {
 	font-size: 20px;
 }
 
-.filter button {
+.filter li label {
 	font: 12px/26px HelveticaNeueLight;
 	margin: 4px 0;
+	text-transform: inherit;
 }
 
 .accordion > input:checked ~ label::before { transform: rotate(-45deg);}
@@ -737,6 +745,7 @@ section.wear-with .img:hover .sizes { bottom: 58px;}
 	border: 1px solid;
     border-image: url(images/sale-border.png) 1;
 	position: absolute;
+	z-index: 1;
 	top: 10px;
 	left: 10px;
 }
@@ -1820,9 +1829,9 @@ footer p:nth-of-type(2) {
 		margin: 15px 0;
 	}
 
-	.filter button { font: 14px/26px HelveticaNeueLight;}
+	.filter li label { font: 14px/26px HelveticaNeueLight;}
 
-	#novelties + label::after, #sale + label::after { top: 9px;}
+	#novelties + label::after, #sale + label::after, .filter input + label::after { top: 9px;}
 
 	.choosed { margin: 10px 0 30px 0;}
 
