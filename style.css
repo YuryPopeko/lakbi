@@ -83,7 +83,7 @@ ul {
 	margin: 0;
 }
 
-a {	text-decoration: none;}
+a {	text-decoration: none}
 
 button {
 	padding: 0;
@@ -111,9 +111,9 @@ hr.long {
     height: 1px;
 }
 
-#map { height: 100%;}
+#map {height: 100%}
 
-input[type="submit"] { cursor: pointer;}
+input[type="submit"] {cursor: pointer}
 
 .bttn {
 	display: block;
@@ -130,7 +130,7 @@ input[type="submit"] { cursor: pointer;}
 	color: #676767;
 }
 
-.gray.bttn:hover { color: #676767;}
+.gray.bttn:hover {color: #676767}
 
 .black.bttn {
 	border: 1px solid #000;
@@ -143,7 +143,7 @@ input[type="submit"] { cursor: pointer;}
 	background: #000;
 }
 
-.full.black.bttn:hover { background: #424242;}
+.full.black.bttn:hover {background: #424242}
 
 .black.bttn:hover {
 	background: #000;
@@ -160,8 +160,8 @@ input[type="submit"] { cursor: pointer;}
 	color: #000;
 }
 
-section.head { transition: .4s;}
-header .menu { height: 67px;}
+section.head {transition: .4s}
+header .menu {height: 67px}
 
 section.head {
 	height: 100vh;
@@ -169,8 +169,8 @@ section.head {
 	padding: 3.24vh 0 0 0;
 }
 
-.black nav a { color: #000;}
-.black .logo { background: url(images/logo-black.png) no-repeat center / 100% 100%;}
+.black nav a {color: #000}
+.black .logo {background: url(images/logo-black.png) no-repeat center / 100% 100%}
 
 nav > ul {
 	display: inline-flex;
@@ -190,7 +190,7 @@ nav .icons {
     top: 18px;
 }
 
-.black .icons { top: 18px;}
+.black .icons {top: 18px}
 
 nav > ul > li:nth-child(n+1):nth-child(-n+4) a {
 	text-transform: uppercase;
@@ -216,7 +216,7 @@ nav > ul > li {
 	position: relative;
 }
 /*
-.drop-menu { padding: 15px;}
+.drop-menu {padding: 15px}
 
 .drop-menu > a::after {
 	content: "";
@@ -227,7 +227,7 @@ nav > ul > li {
 	background: url(images/triangle.svg) no-repeat center;
 }
 */
-.black .drop-menu > a::after { background-image: url(images/triangle-black.svg);}
+.black .drop-menu > a::after {background-image: url(images/triangle-black.svg)}
 
 .drop-menu ul {
 	width: 233px;
@@ -239,16 +239,16 @@ nav > ul > li {
     left: 0px;
 }
 
-.drop-menu li {	padding: 5px 0;}
+.drop-menu li {	padding: 5px 0}
 
 .drop-menu li a {
 	font: 12px/36px HelveticaNeueRoman;
 	color: #c8c8c8;
 }
 /*
-.drop-menu a:hover { color: #fff;}
-.drop-menu:hover { background: #1e1e1e;}
-.drop-menu:hover > a { color: #c8c8c8;}
+.drop-menu a:hover {color: #fff}
+.drop-menu:hover {background: #1e1e1e}
+.drop-menu:hover > a {color: #c8c8c8}
 
 .drop-menu:hover ul {
 	visibility: visible;
@@ -278,8 +278,8 @@ nav input[type="search"] {
 	font: 14px/36px ProximaNovaLight;
 }
 
-nav input[type="search"]::placeholder { color: #fff;}
-.black nav input[type="search"]::placeholder { color: #000;}
+nav input[type="search"]::placeholder {color: #fff}
+.black nav input[type="search"]::placeholder {color: #000}
 
 input[type="search"]::-webkit-search-cancel-button {
 	-webkit-appearance: none;
@@ -305,15 +305,15 @@ nav .cart a {
 	height: 13px;
 }
 
-nav .search button { background: url(images/search.svg) no-repeat center;}
-nav .account button { background: url(images/account.svg) no-repeat center;}
-nav .wish a { background: url(images/wish.svg) no-repeat center;}
-nav .cart a { background: url(images/cart.svg) no-repeat center;}
+nav .search button {background: url(images/search.svg) no-repeat center}
+nav .account button {background: url(images/account.svg) no-repeat center}
+nav .wish a {background: url(images/wish.svg) no-repeat center}
+nav .cart a {background: url(images/cart.svg) no-repeat center}
 
-.black .search button { background-image: url(images/search-black.svg);}
-.black .wish a { background-image: url(images/wish-black.svg);}
-.black .cart a { background-image: url(images/cart-black.svg);}
-.black .hamburger { background-image: url(images/hamburger-black.svg);}
+.black .search button {background-image: url(images/search-black.svg)}
+.black .wish a {background-image: url(images/wish-black.svg)}
+.black .cart a {background-image: url(images/cart-black.svg)}
+.black .hamburger {background-image: url(images/hamburger-black.svg)}
 
 nav .language {
 	text-decoration: underline;
@@ -321,7 +321,7 @@ nav .language {
 	text-align: center;
 }
 
-nav .search input[type="submit"] { display: none;}
+nav .search input[type="submit"] {display: none}
 
 .sign {
 	width: 370px;
@@ -357,7 +357,7 @@ nav .search input[type="submit"] { display: none;}
 	cursor: pointer;
 }
 
-.close.simple { background: url(images/search-close-black.svg) no-repeat center / 60% 60%;}
+.close.simple {background: url(images/search-close-black.svg) no-repeat center / 60% 60%}
 
 .sign h3 {
 	text-align: center;
@@ -405,7 +405,7 @@ nav .search input[type="submit"] { display: none;}
 	color: #adadad;
 }
 
-.sign .in .with { margin: 20px auto 25px auto;}
+.sign .in .with {margin: 20px auto 25px auto}
 
 .sign .with::before,
 .sign .with::after {
@@ -418,10 +418,10 @@ nav .search input[type="submit"] { display: none;}
 }
 
 .sign .in .with::before,
-.sign .in .with::after { width: 128px;}
+.sign .in .with::after {width: 128px}
 
-.sign .with::before { margin: 0 23px 0 0;}
-.sign .with::after { margin: 0 0 0 23px;}
+.sign .with::before {margin: 0 23px 0 0}
+.sign .with::after {margin: 0 0 0 23px}
 
 .social {
 	margin: 0 auto;
@@ -429,7 +429,7 @@ nav .search input[type="submit"] { display: none;}
 	justify-content: space-between;
 }
 
-.sign .social {	width: 252px;}
+.sign .social {	width: 252px}
 .social * {
 	border-radius: 50%;
 	transition: .4s;
@@ -440,19 +440,19 @@ nav .search input[type="submit"] { display: none;}
 	height: 40px;
 }
 
-.social .in { background: #393939 url(images/in.svg) no-repeat center / 35% 35%;}
-.social .fb { background: #393939 url(images/fb.svg) no-repeat center / 35% 35%;}
-.social .vk { background: #393939 url(images/vk.svg) no-repeat center / 35% 35%;}
-.social .lj { background: #393939 url(images/lj.svg) no-repeat center / 35% 35%;}
-.social .pi { background: #393939 url(images/pi.svg) no-repeat center / 35% 35%;}
+.social .in {background: #393939 url(images/in.svg) no-repeat center / 35% 35%}
+.social .fb {background: #393939 url(images/fb.svg) no-repeat center / 35% 35%}
+.social .vk {background: #393939 url(images/vk.svg) no-repeat center / 35% 35%}
+.social .lj {background: #393939 url(images/lj.svg) no-repeat center / 35% 35%}
+.social .pi {background: #393939 url(images/pi.svg) no-repeat center / 35% 35%}
 
-.social .in:hover { background-image: url(images/in-black.svg);}
-.social .fb:hover { background-image: url(images/fb-black.svg);}
-.social .vk:hover { background-image: url(images/vk-black.svg);}
-.social .lj:hover { background-image: url(images/lj-black.svg);}
-.social .pi:hover { background-image: url(images/pi-black.svg);}
+.social .in:hover {background-image: url(images/in-black.svg)}
+.social .fb:hover {background-image: url(images/fb-black.svg)}
+.social .vk:hover {background-image: url(images/vk-black.svg)}
+.social .lj:hover {background-image: url(images/lj-black.svg)}
+.social .pi:hover {background-image: url(images/pi-black.svg)}
 
-.social *:hover { background-color: #dcdcdc;}
+.social *:hover {background-color: #dcdcdc}
 
 .sign hr {
 	background: #e6e6e6;
@@ -481,12 +481,12 @@ nav .search input[type="submit"] { display: none;}
 	margin: 5px auto;
 }
 
-.sign .up .with { margin: 15px 0 5px 0;}
+.sign .up .with {margin: 15px 0 5px 0}
 
 .sign .up .with::before,
-.sign .up .with::after { width: 121px;}
+.sign .up .with::after {width: 121px}
 
-h1 { 
+h1 {
 	font: 60px/70px FuturaNormal;
 	margin: 25vh 0 0 0;
 	text-align: center;
@@ -607,9 +607,9 @@ section.head > a {
 	text-transform: inherit;
 }
 
-.accordion > input:checked ~ label::before { transform: rotate(-45deg);}
+.accordion > input:checked ~ label::before {transform: rotate(-45deg)}
 
-.accordion label { cursor: pointer;}
+.accordion label {cursor: pointer}
 
 .accordion > div {
     height: 0;
@@ -617,7 +617,7 @@ section.head > a {
     overflow: hidden;
 }
 
-.accordion > #collection:checked ~ div { height: 310px;}
+.accordion > #collection:checked ~ div {height: 310px}
 
 .catalog .head {
 	margin: 40px 0 30px 0;
@@ -702,9 +702,9 @@ section.wear-with .sizes {
 section.wear-with .sizes div {
 	margin: 0 auto;
 	padding: 10px 0;
-	width: 170px;
+	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .products .product .sizes span,
@@ -717,8 +717,13 @@ section.wear-with .sizes span {
 	border: 1px solid #fff;
 }
 
+.products .product .sizes span + span,
+section.wear-with .sizes span + span {
+	margin-left: 8px;
+}
+
 .products .product .img:hover .sizes,
-section.wear-with .img:hover .sizes { bottom: 58px;}
+section.wear-with .img:hover .sizes {bottom: 58px}
 
 .products .product .title {
 	color: #9b9ea8;
@@ -726,7 +731,7 @@ section.wear-with .img:hover .sizes { bottom: 58px;}
 	margin: 10px 0;
 }
 
-.products .product .price { color: #000;}
+.products .product .price {color: #000}
 
 .old-price {
 	font: 12px/26px HelveticaNeueLight;
@@ -734,7 +739,7 @@ section.wear-with .img:hover .sizes { bottom: 58px;}
 	text-decoration: line-through;
 }
 
-.with-sale { position: relative;}
+.with-sale {position: relative}
 
 .with-sale::before {
 	content: "Sale";
@@ -750,7 +755,7 @@ section.wear-with .img:hover .sizes { bottom: 58px;}
 	left: 10px;
 }
 
-.products .product img { width: 100%;}
+.products .product img {width: 100%}
 
 .products button {
 	width: 268px;
@@ -764,8 +769,8 @@ section.wear-with .img:hover .sizes { bottom: 58px;}
 	margin: 10px 0 0 0;
 }
 
-.novelties { background: url(images/novelties.jpg) no-repeat center / cover;}
-.sale { background: url(images/sale.jpg) no-repeat center / cover;}
+.novelties {background: url(images/novelties.jpg) no-repeat center / cover}
+.sale {background: url(images/sale.jpg) no-repeat center / cover}
 
 h2 {
 	font: 48px/36px ProximaNovaSemibold;
@@ -783,8 +788,8 @@ h2 {
 	display: inline-block;
 }
 
-.novelties a { margin: 7.41vh 0 0 700px;}
-.sale a { margin: 7.41vh 0 0 0;}
+.novelties a {margin: 7.41vh 0 0 700px}
+.sale a {margin: 7.41vh 0 0 0}
 
 section.account {
 	display: flex;
@@ -793,7 +798,7 @@ section.account {
 	padding: 60px 0;
 }
 
-.account .menu { height: 267px;}
+.account .menu {height: 267px}
 
 .account > div {
 	display: flex;
@@ -820,10 +825,10 @@ section.account {
 	color: #fff;
 }
 
-.account > .item { display: none;}
+.account > .item {display: none}
 
 .account .wishlist,
-.account .history {	width: 870px;}
+.account .history {	width: 870px}
 
 .wishlist .item,
 .history .item {
@@ -839,7 +844,7 @@ section.account {
 }
 
 .wishlist .item > div,
-.history .item > div { float: left;}
+.history .item > div {float: left}
 
 .history .date {
 	font: 14px/26px HelveticaNeueLight;
@@ -848,7 +853,8 @@ section.account {
 }
 
 .history .number {
-	font: 14px/26px HelveticaNeueLight;
+	font: 20px/48px HelveticaNeueLight;
+	float: left;
 }
 
 .wishlist .item .title {
@@ -912,24 +918,35 @@ section.account {
 	right: 35px;
 }
 
-.wishlist .item button:first-of-type { bottom: 100px;}
+.history .order {margin-bottom: 54px}
+
+.item.history .order > button {float: right}
+
+.wishlist .item button:first-of-type {bottom: 100px}
 .wishlist .item button:last-of-type,
-.history .item button:last-of-type { bottom: 40px;}
+.history .item button {bottom: 40px}
 
 .account .profile {
 	width: 770px;
-	height: 167px;
 	justify-content: space-between;
 	border: 1px solid #ececec;
 	padding: 50px;
 }
 
-.account #wishlist:checked ~ .wishlist { display: block;}
-.account #profile:checked ~ .profile { display: flex;}
-.account #history:checked ~ .history { display: block;}
-.account #cart:checked ~ .cart { display: block;}
+.account #wishlist:checked ~ .wishlist {display: block}
 
-.account .profile div {	width: 360px;}
+.account #profile:checked ~ .profile {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.account #history:checked ~ .history {display: block}
+.account #cart:checked ~ .cart {display: block}
+
+.account .profile div {
+	width: 360px;
+	margin-bottom: 40px;
+}
 
 .account .profile div *:not(button) {
 	display: block;
@@ -953,14 +970,16 @@ section.account {
 	cursor: pointer;
 }
 
-.account .profile label:hover::after { background: url(images/edit-hover.svg) no-repeat;}
+.account .profile label:hover::after {background: url(images/edit-hover.svg) no-repeat}
 
-.account .profile label:last-of-type { margin: 40px 0 0 0;}
+.account .profile label:last-of-type {margin: 40px 0 0 0}
 
-.account .profile input {
+.account .profile input:not([type="submit"]) {
 	border-bottom: 2px solid #767676;
 	font: 18px/26px HelveticaNeueLight;
 }
+
+.account .profile input[type="submit"] {margin: 0 auto}
 
 section.product {
 	padding: 44px 0 0 0;
@@ -1028,7 +1047,7 @@ section.product .price {
 	color: #767676;
 }
 
-section.product .info b { font: 12px/26px HelveticaNeueRoman;}
+section.product .info b {font: 12px/26px HelveticaNeueRoman}
 
 section.product .info div:not(.product-tabs) label {
 	display: inline-block;
@@ -1043,8 +1062,8 @@ section.product .info div:not(.product-tabs) label {
 	position: relative;
 }
 
-label[for="color-a"] { background: #979dad;}
-label[for="color-b"] { background: #d5e1dd;}
+label[for="color-a"] {background: #979dad}
+label[for="color-b"] {background: #d5e1dd}
 
 #color-a:checked ~ label[for="color-a"]::after,
 #color-b:checked ~ label[for="color-b"]::after,
@@ -1070,9 +1089,9 @@ section.product button.share {
 	text-decoration: underline;
 }
 
-section.product .size-table { margin: 30px 0 45px 0;}
+section.product .size-table {margin: 30px 0 45px 0}
 
-section.product button.gray { margin: 10px 0 30px;}
+section.product button.gray {margin: 10px 0 30px}
 
 section.product button.share::before {
 	content: "";
@@ -1083,7 +1102,7 @@ section.product button.share::before {
 	margin: 0 10px -3px 0;
 }
 
-.product-tabs { margin: 40px 0 0 0;}
+.product-tabs {margin: 40px 0 0 0}
 
 .product-tabs label {
 	font: 12px/50px HelveticaNeueRoman;
@@ -1096,10 +1115,10 @@ section.product button.share::before {
 	cursor: pointer;
 }
 
-section.product .product-tabs p { margin: 30px 0;}
+section.product .product-tabs p {margin: 30px 0}
 
 .product-tabs #description:checked ~ label[for="description"],
-.product-tabs #care:checked ~ label[for="care"] { background: #ececec;}
+.product-tabs #care:checked ~ label[for="care"] {background: #ececec}
 
 .product-tabs div {
 	border-top: 1px solid #ececec;
@@ -1107,7 +1126,7 @@ section.product .product-tabs p { margin: 30px 0;}
 }
 
 .product-tabs #description:checked ~ .description,
-.product-tabs #care:checked ~ .care { display: block;}
+.product-tabs #care:checked ~ .care {display: block}
 
 .product-photos {
 	display: flex;
@@ -1129,9 +1148,9 @@ p.wear-with {
 	margin: 0 auto 20px auto;
 }
 
-section.wear-with {	padding: 31px 0 0 0;}
-section.wear-with img { width: 100%;}
-section.wear-with .product:last-child { margin: 0;}
+section.wear-with {	padding: 31px 0 0 0}
+section.wear-with img {width: 100%}
+section.wear-with .product:last-child {margin: 0}
 
 .instagram h2,
 .subscribe h2 {
@@ -1160,7 +1179,7 @@ section.wear-with .product:last-child { margin: 0;}
 	width: 100%;
 }
 
-.instagram a:hover img { filter: brightness(.5);}
+.instagram a:hover img {filter: brightness(.5)}
 
 .instagram a:hover::before,
 .instagram a:hover::after {
@@ -1183,10 +1202,10 @@ section.wear-with .product:last-child { margin: 0;}
 	z-index: -1;
 }
 
-.instagram a:hover span { z-index: 0;}
+.instagram a:hover span {z-index: 0}
 
-.instagram .likes { left: 35%;}
-.instagram .commentaries { left: 70%;}
+.instagram .likes {left: 35%}
+.instagram .commentaries {left: 70%}
 
 .instagram a:hover::before {
 	background: url(images/likes.svg) no-repeat center;
@@ -1198,16 +1217,16 @@ section.wear-with .product:last-child { margin: 0;}
 	left: 60%;
 }
 
-.shipping { padding: 50px 0;}
+.shipping {padding: 50px 0}
 
-.shipping p { font: 16px/26px HelveticaNeueLight;}
+.shipping p {font: 16px/26px HelveticaNeueLight}
 
 .shipping .numbers {
 	display: flex;
 	align-items: center;
 }
 
-.shipping .description { display: flex;}
+.shipping .description {display: flex}
 
 .shipping .numbers div {
 	width: 36px;
@@ -1225,7 +1244,7 @@ section.wear-with .product:last-child { margin: 0;}
 	margin: 0 0 0 6px;
 }
 
-.shipping .ready { background: url(images/ready.svg) no-repeat center / 50% 50%;}
+.shipping .ready {background: url(images/ready.svg) no-repeat center / 50% 50%}
 
 .shipping .description > div {
 	flex-basis: 276px;
@@ -1237,19 +1256,19 @@ section.wear-with .product:last-child { margin: 0;}
 	height: 60px;
 }
 
-.shipping .packing div { background: url(images/packing.svg) no-repeat center;}
-.shipping .method div { background: url(images/method.svg) no-repeat center;}
-.shipping .payment div { background: url(images/payment.svg) no-repeat center;}
-.shipping .confirm div { background: url(images/confirm.svg) no-repeat center;}
+.shipping .packing div {background: url(images/packing.svg) no-repeat center}
+.shipping .method div {background: url(images/method.svg) no-repeat center}
+.shipping .payment div {background: url(images/payment.svg) no-repeat center}
+.shipping .confirm div {background: url(images/confirm.svg) no-repeat center}
 
-.countries { width: 970px;}
+.countries {width: 970px}
 
-.country, .contacts-tab.first, .contacts-tab.second { display: none;}
+.country, .contacts-tab.first, .contacts-tab.second {display: none}
 
 #rb:checked ~ .rb,
 #other-countries:checked ~ .other-countries,
 #contacts:checked ~ .contacts-tab.first,
-#shops:checked ~ .contacts-tab.second { display: block;}
+#shops:checked ~ .contacts-tab.second {display: block}
 
 #rb:checked ~ .tabs label[for="rb"],
 #other-countries:checked ~ .tabs label[for="other-countries"],
@@ -1264,7 +1283,7 @@ section.wear-with .product:last-child { margin: 0;}
 	margin: 52px auto 70px auto;
 }
 
-.contacts label { cursor: pointer;}
+.contacts label {cursor: pointer}
 
 .contacts label h1 {
 	font: 30px/26px HelveticaNeueLight;
@@ -1307,9 +1326,9 @@ section.wear-with .product:last-child { margin: 0;}
     transform: rotate(0deg);
 }
 
-.accordion > input:checked ~ label::after { transform: rotate(180deg);}
+.accordion > input:checked ~ label::after {transform: rotate(180deg)}
 
-.accordion > #rb-shipping-methods:checked ~ div { height: 760px;}
+.accordion > #rb-shipping-methods:checked ~ div {height: 760px}
 
 .shipping-method {
 	width: 47%;
@@ -1333,7 +1352,7 @@ section.wear-with .product:last-child { margin: 0;}
 	text-transform: uppercase;
 }
 
-.shipping-method p { width: 370px;}
+.shipping-method p {width: 370px}
 
 .shipping-methods > p,
 .shipping-methods > ul li {
@@ -1341,16 +1360,16 @@ section.wear-with .product:last-child { margin: 0;}
 	color: #adadad;
 }
 
-.shipping-methods > p { margin: 30px 30px 0 30px;}
+.shipping-methods > p {margin: 30px 30px 0 30px}
 
 .shipping-methods > ul {
 	list-style: square;
 	padding: 0 0 0 45px;
 }
 
-.contacts .tabs { width: 330px;}
+.contacts .tabs {width: 330px}
 
-.contacts-tab { margin: 0 auto 50px auto;}
+.contacts-tab {margin: 0 auto 50px auto}
 
 .contacts-tab > p {
 	font: 22px/26px HelveticaNeueLight;
@@ -1399,7 +1418,7 @@ section.wear-with .product:last-child { margin: 0;}
 }
 
 
-.contacts-tab > div div { width: 33%;}
+.contacts-tab > div div {width: 33%}
 
 .contacts-tab span {
 	font: 16px/26px HelveticaNeueMedium;
@@ -1420,7 +1439,7 @@ section.wear-with .product:last-child { margin: 0;}
 	position: relative;
 }
 
-.contacts + .info p { text-align: center;}
+.contacts + .info p {text-align: center}
 
 .subscribe p {
 	font: 16px/24px HelveticaNeueLight;
@@ -1468,7 +1487,7 @@ section.wear-with .product:last-child { margin: 0;}
 	top: 37px;
 }
 
-.subscribe p { margin: 15px 0 70px 0;}
+.subscribe p {margin: 15px 0 70px 0}
 
 .we-in-social p {
 	font: 16px/24px HelveticaNeueRoman;
@@ -1523,7 +1542,7 @@ footer {
 	background: #f8f8f8;
 }
 
-footer .wrapper { position: relative;}
+footer .wrapper {position: relative}
 
 footer .wrapper * {
 	font: 16px/24px HelveticaNeueRoman;
@@ -1557,7 +1576,7 @@ footer p:nth-of-type(2) {
 	margin: 0 0 50px 0;
 }
 
-.not-found a { margin: 0 auto;}
+.not-found a {margin: 0 auto}
 
 .hanger {
 	width: 100px;
@@ -1588,48 +1607,48 @@ footer p:nth-of-type(2) {
 	box-shadow: -2px 3px 25px -5px #000;
 }
 
-.table-of-sizes.visible { top: 50%;}
+.table-of-sizes.visible {top: 50%}
 
 @media (min-width: 1201px) {
-	.products .product:nth-child(3n) { margin-right: 0;}
+	.products .product:nth-child(3n) {margin-right: 0}
 }
 
 @media (max-width: 1200px) {
-	.only-desktop { display: none;}
+	.only-desktop {display: none}
 
-	.wrapper { width: 940px;}
+	.wrapper {width: 940px}
 
 	nav .menu {
 		width: 510px;
 	    margin: 0 0 0 79px;
 	}
 
-	h1 { margin: 22vh 0 0 0;}
+	h1 {margin: 22vh 0 0 0}
 
-	.novelties h2 { margin: 36.11vh 0 0 50%;}
-	.novelties a { margin: 7.41vh 0 0 50%;}
+	.novelties h2 {margin: 36.11vh 0 0 50%}
+	.novelties a {margin: 7.41vh 0 0 50%}
 
-	nav input[type="search"] { width: 125px;}
+	nav input[type="search"] {width: 125px}
 
-	.catalog .head { width: 700px;}
+	.catalog .head {width: 700px}
 
-	.filter { margin: 20px 25px 0 0;}
+	.filter {margin: 20px 25px 0 0}
 
-	.choosed, .products { width: 700px;}
+	.choosed, .products {width: 700px}
 
-	.products .product:nth-child(2n) { margin-right: 0;}
+	.products .product:nth-child(2n) {margin-right: 0}
 
 	.products .product {
     	width: 330px;
     	margin: 0 40px 30px 0;
     }
 
-    .products .product .img { height: 490px;}
-    .shipping .line { width: 180px;}
+    .products .product .img {height: 490px}
+    .shipping .line {width: 180px}
 
-    section.account { padding: 40px 0;}
+    section.account {padding: 40px 0}
 
-    .account > div { width: 220px;}
+    .account > div {width: 220px}
 
     .account .profile {
     	width: 630px;
@@ -1638,14 +1657,14 @@ footer p:nth-of-type(2) {
     }
 
     .account .wishlist,
-    .account .history { width: 700px;}
+    .account .history {width: 700px}
     .wishlist .item img,
-    .history .item img { margin: 0 40px 0 0;}
-    .wishlist .item .title { margin: 35px 0 20px 0;}
-    .history .item .title { margin: 20px 0 20px 0;}
+    .history .item img {margin: 0 40px 0 0}
+    .wishlist .item .title {margin: 35px 0 20px 0}
+    .history .item .title {margin: 20px 0 20px 0}
     
     .wishlist .item button:first-of-type,
-    .history .item button:last-of-type {
+    .history .item button {
 		bottom: 20px;
 		right: 25px;
     }
@@ -1656,20 +1675,20 @@ footer p:nth-of-type(2) {
     	left: 240px;
     }
 
-    .account .profile div { width: 300px;}
+    .account .profile div {width: 300px}
 
     section.wear-with .product {
 	    width: 300px;
 	    margin: 0 20px 20px 0;
 	}
 
-	section.wear-with .product:nth-child(3) { margin: 0;}
+	section.wear-with .product:nth-child(3) {margin: 0}
 
-	section.product { align-items: flex-start;}
-    .product-photos div:first-child { margin: 200px 40px 0 0;}
-    .product-photos img { width: 450px;}
+	section.product {align-items: flex-start}
+    .product-photos div:first-child {margin: 200px 40px 0 0}
+    .product-photos img {width: 450px}
 
-	footer { height: 100px;}
+	footer {height: 100px}
 	footer p:first-of-type {
 		float: left;
 		margin: 0 160px 0 0;
@@ -1677,18 +1696,18 @@ footer p:nth-of-type(2) {
 }
 
 @media (min-width: 971px) {
-	.only-mobile { display: none;}
+	.only-mobile {display: none}
 
-	.black .account button { background-image: url(images/account-black.svg);}
+	.black .account button {background-image: url(images/account-black.svg)}
 
-	.shipping-method:first-of-type { margin: 40px 0 0 30px;}
-	.shipping-method:nth-child(2) { margin: 40px 0 0 0;}
+	.shipping-method:first-of-type {margin: 40px 0 0 30px}
+	.shipping-method:nth-child(2) {margin: 40px 0 0 0}
 }
 
 @media (max-width: 970px) {
-	.only-desktop-tablet { display: none !important;}
+	.only-desktop-tablet {display: none !important}
 
-	.wrapper { width: 87.5vw;}
+	.wrapper {width: 87.5vw}
 
 	.bttn {
 	    width: 71.25vw;
@@ -1701,9 +1720,9 @@ footer p:nth-of-type(2) {
 	    padding: 0;
 	}
 
-	nav { height: 15.625vw;}
+	nav {height: 15.625vw}
 
-	nav a { font: 4.69vw/8.125vw FuturaNormal;}
+	nav a {font: 4.69vw/8.125vw FuturaNormal}
 
 	nav .logo {
 		width: 21.875vw;
@@ -1715,7 +1734,7 @@ footer p:nth-of-type(2) {
 	    background-image: url(images/triangle-black.svg);
 	}
 
-	.drop-menu:hover { background: 0;}
+	.drop-menu:hover {background: 0}
 	.drop-menu ul {
 		width: 93%;
 		background: #fff;
@@ -1746,11 +1765,11 @@ footer p:nth-of-type(2) {
 		padding: 5vw 3.125vw;
 	}
 
-	nav .menu > li:nth-child(-n+6) { border-bottom: 1px solid #f0f0f0;}
+	nav .menu > li:nth-child(-n+6) {border-bottom: 1px solid #f0f0f0}
 
-	nav .menu > li > a { color: #000;}
+	nav .menu > li > a {color: #000}
 
-	nav > ul > li:nth-child(n+1):nth-child(-n+7) a { text-transform: uppercase;}
+	nav > ul > li:nth-child(n+1):nth-child(-n+7) a {text-transform: uppercase}
 
 	nav .icons button, nav .cart a {
 	    width: 5vw;
@@ -1762,9 +1781,9 @@ footer p:nth-of-type(2) {
 		top: 5vw;
 	}
 
-	nav .account button { width: 100%;}
+	nav .account button {width: 100%}
 
-	nav .language { text-decoration: none;}
+	nav .language {text-decoration: none}
 
 	.language a {
 		display: inline-block;
@@ -1774,7 +1793,7 @@ footer p:nth-of-type(2) {
 		font: 3.75vw/8.44vw HelveticaNeueRoman;
 	}
 
-	.language .active {	border: 1px solid #000;}
+	.language .active {	border: 1px solid #000}
 
 	nav input[type="search"] {
 		width: 31.25vw;
@@ -1793,8 +1812,8 @@ footer p:nth-of-type(2) {
 		width: 100%;
 		margin: -247.5px 0 0 -50%;
 	}
-	.sign .in .with::before, .sign .in .with::after { width: 103px;}
-	.sign .up .with::before, .sign .up .with::after { width: 96px;}
+	.sign .in .with::before, .sign .in .with::after {width: 103px}
+	.sign .up .with::before, .sign .up .with::after {width: 96px}
 
 	.catalog .head {
 		width: 87.5vw;
@@ -1802,8 +1821,8 @@ footer p:nth-of-type(2) {
 		float: none;
 	}
 
-	.catalog > .accordion > label::before { content: "Фильтры поиска";}
-	.catalog > .accordion > input:checked ~ label::before { content: "Скрыть фильтры";}
+	.catalog > .accordion > label::before {content: "Фильтры поиска"}
+	.catalog > .accordion > input:checked ~ label::before {content: "Скрыть фильтры"}
 
 	.catalog > .accordion aside {
 	    height: 0;
@@ -1816,7 +1835,7 @@ footer p:nth-of-type(2) {
 		margin: 0;
 	}
 
-	#filter:checked ~ aside { height: 106.875vw;}
+	#filter:checked ~ aside {height: 106.875vw}
 
 	label[for="filter"],
 	.filter > button {
@@ -1829,20 +1848,20 @@ footer p:nth-of-type(2) {
 		margin: 15px 0;
 	}
 
-	.filter li label { font: 14px/26px HelveticaNeueLight;}
+	.filter li label {font: 14px/26px HelveticaNeueLight}
 
-	#novelties + label::after, #sale + label::after, .filter input + label::after { top: 9px;}
+	#novelties + label::after, #sale + label::after, .filter input + label::after {top: 9px}
 
-	.choosed { margin: 10px 0 30px 0;}
+	.choosed {margin: 10px 0 30px 0}
 
-	.choosed, .products { width: 100%;}
+	.choosed, .products {width: 100%}
 
 	.products .product {
 		width: 100%;
 		margin: 0 0 30px 0;
 	}
 
-	.products .product .img { height: 414px;}
+	.products .product .img {height: 414px}
 
 	.choosed .item {
 		height: 25px;
@@ -1861,9 +1880,9 @@ footer p:nth-of-type(2) {
 	    margin: 33.5vh 0 0 0;
 	}
 
-	.indicators { margin: 6vh auto 0 auto;}
+	.indicators {margin: 6vh auto 0 auto}
 
-	.novelties, .sale { height: 84.51vh;}
+	.novelties, .sale {height: 84.51vh}
 
 	.novelties {
 		background: url(images/novelties-mobile.jpg) no-repeat center / cover;
@@ -1878,7 +1897,7 @@ footer p:nth-of-type(2) {
 	    position: relative;
 	}
 
-	.novelties h2, .sale h2 { margin: 60vh 0 0 0;}
+	.novelties h2, .sale h2 {margin: 60vh 0 0 0}
 
 	.novelties a,
 	.sale a {
@@ -1923,7 +1942,7 @@ footer p:nth-of-type(2) {
 		transition: .4s;
 	}
 
-	.shipping .description > div div { margin: 0 auto;}
+	.shipping .description > div div {margin: 0 auto}
 
 	.steps {
 		height: 206px;
@@ -1931,9 +1950,9 @@ footer p:nth-of-type(2) {
 		position: relative;
 	}
 
-	.steps p { text-align: center;}
+	.steps p {text-align: center}
 
-	.steps input { display: none;}
+	.steps input {display: none}
 
 	.steps .indicators {
 		display: flex;
@@ -1949,9 +1968,9 @@ footer p:nth-of-type(2) {
 		background: #000;
 	}
 
-	#step-2:checked ~ .description div { right: 100%;}
-	#step-3:checked ~ .description div { right: 200%;}
-	#step-4:checked ~ .description div { right: 300%;}
+	#step-2:checked ~ .description div {right: 100%}
+	#step-3:checked ~ .description div {right: 200%}
+	#step-4:checked ~ .description div {right: 300%}
 
 	#step-1:checked ~ div label[for="step-1"],
 	#step-2:checked ~ div label[for="step-2"],
@@ -1994,18 +2013,18 @@ footer p:nth-of-type(2) {
 		margin: 5.6vw auto 10vw auto;
 	}
 
-	.contacts .tabs { width: 220px;}
+	.contacts .tabs {width: 220px}
 
-	.tabs label { font: 14px/26px HelveticaNeueLight;}
+	.tabs label {font: 14px/26px HelveticaNeueLight}
 
 	.tabs .separator {
 		height: 34px;
 	}
 
-	.contacts-tab > p { margin: 50px 0 30px 0;}
-	.contacts-tab > div { display: block;}
-	.contacts-tab > div div { width: auto;}
-	.contacts-tab span, .contacts-tab > div p { text-align: left;}
+	.contacts-tab > p {margin: 50px 0 30px 0}
+	.contacts-tab > div {display: block}
+	.contacts-tab > div div {width: auto}
+	.contacts-tab span, .contacts-tab > div p {text-align: left}
 
 	.contacts-tab label {
 		display: inline-block;
@@ -2031,11 +2050,11 @@ footer p:nth-of-type(2) {
 		margin: 0;
 	}
 
-	.shipping-methods > p { margin: 20px 0;}
+	.shipping-methods > p {margin: 20px 0}
 
-	.shipping-method .number { margin: 28px 0 22px 0;}
+	.shipping-method .number {margin: 28px 0 22px 0}
 
-	.account {padding: 20px 0;}
+	.account {padding: 20px 0}
 
 	.account > div {
 		width: 100%;
@@ -2051,14 +2070,14 @@ footer p:nth-of-type(2) {
 	}
 
 	.account .profile div,
-	.product-photos img { width: 100%;}
+	.product-photos img {width: 100%}
 	
 	.wishlist .item,
-	.history .item { margin: 20px 0;}
+	.history .item {margin: 20px 0}
 	.wishlist .item > div,
 	.wishlist .item img,
 	.history .item > div,
-	.history .item img { float: none;}
+	.history .item img {float: none}
 
 	.wishlist .item button,
 	.wishlist .item button:last-of-type,
@@ -2068,9 +2087,9 @@ footer p:nth-of-type(2) {
 	}
 
 	.wishlist .item button:first-of-type,
-	.history .item button {margin: 20px 0 8px 0;}
+	.history .item button {margin: 20px 0 8px 0}
 	.wishlist .close,
-	.history .close { top: 0;}
+	.history .close {top: 0}
 
 	section.product.wrapper {
 		width: 100%;
@@ -2098,7 +2117,7 @@ footer p:nth-of-type(2) {
 		width: 100%;
 	}
 
-	.product-tabs label { width: 134px;}
+	.product-tabs label {width: 134px}
 
 	.instagram h2, .subscribe h2 {
 	    font: 5vw/11.25vw ProximaNovaSemibold;
@@ -2106,15 +2125,15 @@ footer p:nth-of-type(2) {
 	    letter-spacing: 2px;
 	}
 
-	.instagram div { margin: 17px 0 0 0;}
+	.instagram div {margin: 17px 0 0 0}
 
 	.instagram a {
 	    width: 200px;
 	    height: 200px;
 	}
 
-	.subscribe p { font: 4.37vw/7.5vw HelveticaNeueLight !important;}
-	.subscribe p:nth-of-type(1) { margin: 4.69vw 0 6.25vw 0;}
+	.subscribe p {font: 4.37vw/7.5vw HelveticaNeueLight !important}
+	.subscribe p:nth-of-type(1) {margin: 4.69vw 0 6.25vw 0}
 
 	.subscribe form {
 	    width: 87.5vw;
@@ -2128,7 +2147,7 @@ footer p:nth-of-type(2) {
 	    float: none;
 	}
 
-	.subscribe input:not([type="submit"]) {	width: 100%;}
+	.subscribe input:not([type="submit"]) {	width: 100%}
 
 	.subscribe input[type="submit"],
 	.subscribe .email {
@@ -2136,7 +2155,7 @@ footer p:nth-of-type(2) {
 	    position: static;
 	}
 
-	.subscribe p:nth-of-type(2) { margin: 11vw 0 9.37vw 0;}
+	.subscribe p:nth-of-type(2) {margin: 11vw 0 9.37vw 0}
 
 	.we-in-social .social {
 	    width: 78.75vw;
@@ -2148,14 +2167,14 @@ footer p:nth-of-type(2) {
 	    height: 12.5vw;
 	}
 
-	.subscribe-success { width: 87.5vw;}
+	.subscribe-success {width: 87.5vw}
 
 	footer {
 	    height: 48.44vw;
 	    padding: 10.94vw 0 0 0;
 	}
 
-	footer .wrapper * { font: 4.375vw/7.5vw HelveticaNeueRoman;}
+	footer .wrapper * {font: 4.375vw/7.5vw HelveticaNeueRoman}
 
 	footer p:first-of-type {
 	    float: none;
