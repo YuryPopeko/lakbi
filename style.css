@@ -2081,7 +2081,7 @@ footer p:nth-of-type(2) {
 
 	.wishlist .item button,
 	.wishlist .item button:last-of-type,
-	.history .item button {
+	.history button {
 		position: static;
 		width: 100%;
 	}
