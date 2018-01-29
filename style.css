@@ -1065,12 +1065,7 @@ section.product .info div:not(.product-tabs) label {
 label[for="color-a"] {background: #979dad}
 label[for="color-b"] {background: #d5e1dd}
 
-#color-a:checked ~ label[for="color-a"]::after,
-#color-b:checked ~ label[for="color-b"]::after,
-#size-a:checked ~ label[for="size-a"]::after,
-#size-b:checked ~ label[for="size-b"]::after,
-#size-c:checked ~ label[for="size-c"]::after,
-#size-d:checked ~ label[for="size-d"]::after {
+input:checked + label::after {
 	content: "";
 	display: inline-block;
     border-style: solid;
