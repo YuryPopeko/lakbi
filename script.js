@@ -371,7 +371,8 @@ var map = new google.maps.Map(document.getElementById('map'), {
 }
 
 
-if(document.location.href.indexOf('index') > 0) {
+
+try {
   $(document).ready(function() {
     $(".owl-carousel").owlCarousel({
       items: 1,
@@ -379,4 +380,4 @@ if(document.location.href.indexOf('index') > 0) {
       navText: ['', '']
     });
   });
-}
+} catch(e) {}
