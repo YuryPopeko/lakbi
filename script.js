@@ -129,21 +129,6 @@ try {
 
 
 try {
-	let head = el('section.head').style;
-	el('.indicators .passive').addEventListener('click', function(e) {
-		head.backgroundImage = 'url(images/goa.jpg)';
-		el('.indicators .active').className = 'passive';
-		e.target.className = 'active';
-		el('.indicators .passive').addEventListener('click', function(e) {
-			head.background = '';
-			el('.indicators .active').className = 'passive';
-			e.target.className = 'active';
-		});
-	});
-} catch(e) {}
-
-
-try {
 	let subscribe = el('.trend form'),
 		success = el('.subscribe-success').style;
 	subscribe.addEventListener('submit', function() {
@@ -383,4 +368,15 @@ var map = new google.maps.Map(document.getElementById('map'), {
   }
 ]
 });
+}
+
+
+if(document.location.href.indexOf('index') > 0) {
+  $(document).ready(function() {
+    $(".owl-carousel").owlCarousel({
+      items: 1,
+      nav: true,
+      navText: ['', '']
+    });
+  });
 }

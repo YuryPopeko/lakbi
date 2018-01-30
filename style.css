@@ -160,14 +160,12 @@ input[type="submit"] {cursor: pointer}
 	color: #000;
 }
 
-section.head {transition: .4s}
-header .menu {height: 67px}
-
 section.head {
-	height: 100vh;
-	background: url(images/header.jpg) no-repeat top / cover;
-	padding: 3.24vh 0 0 0;
+	height: 100vh;;
+	transition: .4s;
 }
+
+header .menu {height: 67px}
 
 .black nav a {color: #000}
 .black .logo {background: url(images/logo-black.png) no-repeat center / 100% 100%}
@@ -494,15 +492,26 @@ h1 {
 	text-transform: uppercase;
 }
 
+section.head h1 {
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 header.main {
 	position: absolute;
 	top: 20px;
-	left: 50%;
-	transform: translate(-50%);
+	left: 0;
+	right: 0;
+	z-index: 2;
 }
 
-section.head > a {
-	margin: 7vh auto 0 auto;
+section.head .bttn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .breadcrumbs {
@@ -516,15 +525,18 @@ section.head > a {
 	color: #353535;
 }
 
-.indicators {
+.head .owl-nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 36px;
-	margin: 20vh auto 0 auto;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
-.indicators button {
+.head .owl-nav div {
 	width: 12px;
 	height: 12px;
 	border-radius: 50%;
@@ -534,7 +546,7 @@ section.head > a {
 	transition: .4s;
 }
 
-.indicators .active {
+.head .owl-nav .disabled {
 	width: 15px;
 	height: 15px;
 	background: #fff;
@@ -807,7 +819,7 @@ section.account {
 	width: 270px;
 }
 
-.account > div label {
+.account > div a {
 	display: block;
 	height: 63px;
 	background: #f1f1f1;
@@ -817,15 +829,10 @@ section.account {
 	cursor: pointer;
 }
 
-#wishlist:checked ~ div label[for="wishlist"],
-#profile:checked ~ div label[for="profile"],
-#history:checked ~ div label[for="history"],
-#cart:checked ~ div label[for="cart"] {
+.account > div a.active {
 	background: #767676;
 	color: #fff;
 }
-
-.account > .item {display: none}
 
 .account .wishlist,
 .account .history {	width: 870px}
@@ -933,15 +940,19 @@ section.account {
 	padding: 50px;
 }
 
-.account #wishlist:checked ~ .wishlist {display: block}
-
-.account #profile:checked ~ .profile {
+.profile {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.account #history:checked ~ .history {display: block}
-.account #cart:checked ~ .cart {display: block}
+.item.wishlist,
+.item.history,
+.item.cart,
+.item.profile {
+	display: block;
+}
+
+.account > .item {display: none}
 
 .account .profile div {
 	width: 360px;
@@ -1038,7 +1049,7 @@ section.product h1 {
 	font: 30px/26px HelveticaNeueLight;
 	color: #161616;
 	text-transform: none;
-	margin: 35px auto 15px auto;
+	margin: 0 auto 15px auto;
 	text-align: left;
 }
 
@@ -1062,10 +1073,8 @@ section.product .info div:not(.product-tabs) label {
 	position: relative;
 }
 
-label[for="color-a"] {background: #979dad}
-label[for="color-b"] {background: #d5e1dd}
-
-input:checked + label::after {
+input[name=color]:checked + label::after,
+input[name=size]:checked + label::after {
 	content: "";
 	display: inline-block;
     border-style: solid;
@@ -1629,6 +1638,8 @@ footer p:nth-of-type(2) {
 
 	.filter {margin: 20px 25px 0 0}
 
+	.filter button + button {margin-top: 10px}
+
 	.choosed, .products {width: 700px}
 
 	.products .product:nth-child(2n) {margin-right: 0}
@@ -1856,10 +1867,11 @@ footer p:nth-of-type(2) {
 		margin: 0 0 30px 0;
 	}
 
+	section.product h1 {margin-top: 35px}
+
 	.products .product .img {height: 414px}
 
 	.choosed .item {
-		height: 25px;
 	    font: 10px/25px HelveticaNeueBold;
 	    padding: 0 9px;
 	    margin: 0 1px 0 0;
