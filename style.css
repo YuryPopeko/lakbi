@@ -1337,7 +1337,7 @@ section.wear-with .product:last-child {margin: 0}
 .shipping-method {
 	width: 47%;
 	display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
 	float: left;
 }
 
@@ -1347,6 +1347,7 @@ section.wear-with .product:last-child {margin: 0}
 	height: 48px;
 	border: 2px solid #e1e1e1;
 	border-radius: 50%;
+	margin-right: 20px;
 	text-align: center;
 	font: 18px/50px HelveticaNeueHeavy;
 }
@@ -1359,7 +1360,7 @@ section.wear-with .product:last-child {margin: 0}
 .shipping-method p {width: 370px}
 
 .accordion > div > p,
-.accordion > div ul li {
+.accordion > div li {
 	font: 16px/26px HelveticaNeueLight;
 	color: #adadad;
 }
@@ -1373,6 +1374,17 @@ section.wear-with .product:last-child {margin: 0}
 .accordion ul {
 	list-style: square;
 	padding: 0 0 0 45px;
+	margin-top: 30px;
+}
+
+.accordion ol ul {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.accordion img {
+	display: block;
+	max-width: 100%;
 }
 
 .contacts .tabs {width: 330px}
@@ -1710,8 +1722,8 @@ footer p:nth-of-type(2) {
 
 	.black .account button {background-image: url(images/account-black.svg)}
 
-	.shipping-method:first-of-type {margin: 40px 0 0 30px}
-	.shipping-method:nth-child(2) {margin: 40px 0 0 0}
+	.shipping-method:nth-of-type(odd) {margin: 40px 0 0 30px}
+	.shipping-method:nth-of-type(even) {margin: 40px 0 0 0}
 }
 
 @media (max-width: 970px) {
@@ -2047,8 +2059,6 @@ footer p:nth-of-type(2) {
 	.contacts-tab .location select:first-child {margin: 0 0 20px 0}
 
 	.contacts .map {height: 480px}
-
-	.accordion > #rb-shipping-methods:checked ~ div {height: 970px}
 
 	.shipping-method {
 	    width: 100%;
